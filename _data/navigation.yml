@@ -14,22 +14,22 @@ main:
 #  - title: "Talks"
 #    url: /talks/    
    - title: "Projects"
-    url: /sudu.github.io/projects/
+     url: /sudu.github.io/projects/
  
    - title: "Blog Posts"
      url: /year-archive/
   
    - title: "Portfolio"
-    url: /portfolio/
+     url: /portfolio/
         
    - title: "Blog Posts"
-    url: /year-archive/
+     url: /year-archive/
 
    - title: "Teaching"
-    url: /sudu.github.io/teaching/  
+     url: /sudu.github.io/teaching/  
 
    - title: "CV"
-    url: /cv/
+     url: /cv/
     
 
   - 
@@ -37,4 +37,4 @@ main:
   #   url: /cv-json/
     
   - title: "Guide"
-    url: /markdown/
+   url: /markdown/
