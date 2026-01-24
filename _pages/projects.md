@@ -7,6 +7,10 @@ author_profile: true
 
 Here are some of the projects and workflows I’m exploring as an undergraduate bioscience and biotechnology student.
 
-- Genome assembly and polishing with tools like Medaka, Polypolish, and related pipelines.
-- Species identification and bacterial genomics using hybrid Illumina/ONT data.
-- Workflow automation and reproducible analysis with Snakemake and Nextflow.
+<ul>
+  {% for project in site.projects %}
+    <li>
+      <a href="{{ project.url | relative_url }}">{{ project.title }}</a> – {{ project.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
