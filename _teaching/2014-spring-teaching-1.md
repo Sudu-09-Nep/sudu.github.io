@@ -4,7 +4,7 @@ collection: teaching
 type: "Volunteer teaching"
 permalink: /teaching/2023-balvikas-kathmandu
 venue: "Sri Sathya Sai Seva Organization, Thapathali Centre"
-date: 2023
+date: 2014-03-01
 location: "Kathmandu, Nepal"
 ---
 
