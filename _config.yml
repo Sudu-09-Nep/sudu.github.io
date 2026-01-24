@@ -236,7 +236,7 @@ collections:
     permalink: /:collection/:path/
   projects:
     output: true
-    permalink: /project/:path/
+    permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
