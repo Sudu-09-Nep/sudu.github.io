@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Sudarshan Aryal — Biosciences & Stories"
+title: "Sudarshan Aryal"
 author_profile: true
 redirect_from: 
   - /about/
