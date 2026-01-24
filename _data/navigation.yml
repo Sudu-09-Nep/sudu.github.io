@@ -12,7 +12,8 @@ main:
 #   url: /publications/
 
 #  - title: "Talks"
-#    url: /talks/    
+#    url: /talks/
+
    - title: "Projects"
      url: /sudu.github.io/projects/
  
