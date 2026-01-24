@@ -1,20 +1,16 @@
 ---
-title: "Teaching experience 1"
+title: "Bakvikas Teaching (Sri Sathya Sai Seva Organization) "
 collection: teaching
-type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+type: "Volunteer teaching"
+permalink: /teaching/2023-balvikas-kathmandu
+venue: "Sri Sathya Sai Seva Organization, Thapathali Centre"
+date: 2023
+location: "Kathmandu, Nepal"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+For two years, I volunteered as a Balvikas teacher at the Sri Sathya Sai Seva Organization, Thapathali Centre, Kathmandu.
 
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+My responsibilities included:
+- Preparing simple value-based lessons and activities for children.
+- Leading weekly classes and engaging students through stories and discussions.
+- Coordinating with other volunteers to plan sessions and events.
