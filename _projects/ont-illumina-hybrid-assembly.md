@@ -4,10 +4,10 @@ layout: single
 permalink: /projects/ont-illumina-hybrid-assembly/
 ---
 
-Short overview of the project here.
+This project follows a hybrid Nanopore–Illumina assembly tutorial to build a reproducible workflow for assembling a bacterial genome from long-read and short-read data.[]
 
-- Why you did it
-- Main tools (Unicycler, Medaka, Polypolish, etc.)
-- Key learning outcomes
+- Set up a conda environment from `environment.yml` for all required tools.
+- Organized reads, intermediate results, and scripts in a clear directory structure.
+- Practiced running and interpreting hybrid assemblies and polishing steps.
 
-Repo: [GitHub link](https://github.com/Sudu-09-Nep/ont-illumina-hybrid-assembly)
+Repository: [ont-illumina-hybrid-assembly](https://github.com/Sudu-09-Nep/ont-illumina-hybrid-assembly)
