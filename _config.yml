@@ -24,13 +24,14 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
-  uri              : # URL
-  email            : "none@example.org" 
+  name             : "Sudarshan Aryal"
+  pronouns         : "he/his"  
+  bio              : "Undergraduate Bioscience and Biotechnology Student"
+  location         : "Malika Rural Municipality-4-Gulmi, Nepal"
+  #employer         : "Red Brick University"
+  uri              : "https://sudu-09-nep.github.io/sudu.github.io/"
+  email            : "sudarshanaryal99@gmail.com" 
+  student          : "Sri Sathya Sai Institute of Higher Learning"
 
   # Academic websites
   academia         : # URL
