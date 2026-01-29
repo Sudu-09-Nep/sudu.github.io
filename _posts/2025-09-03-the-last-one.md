@@ -3,6 +3,8 @@ layout: single
 title: "The Last One"
 date: 2025-09-23
 categories: nature-and-tech
+header:
+  teaser: /images/the-last-one-cover.jpg
 tags:
   - nature
   - climate-change
