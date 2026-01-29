@@ -2,6 +2,8 @@
 title: "Archive Layout with Content"
 layout: archive
 permalink: /archive-layout-with-content/
+entries_layout: grid
+show_excerpts: true
 ---
 
 A variety of common markup showing how the theme styles them.
@@ -54,7 +56,7 @@ Startup
 :   Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.
 
 Do It Live
-:   I'll let Bill O'Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") this one.
+:   I'll let Bill O'Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c) this one.
 
 ## Unordered Lists (Nested)
 
@@ -105,7 +107,7 @@ Make any link standout more when applying the `.btn` class.
 
 ### Anchor Tag (aka. Link)
 
-This is an example of a [link](https://github.com "GitHub").
+This is an example of a [link](https://github.com).
 
 ### Abbreviation Tag
 
@@ -172,6 +174,8 @@ Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should 
 This allows you to denote <var>variables</var>.
 
 {% include base_path %}
-{% for post in site.pages %}
-{% include archive-single.html %}
-{% endfor %}
+<div class="grid__wrapper">
+  {% for post in site.posts %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>
