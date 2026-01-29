@@ -6,7 +6,7 @@ entries_layout: grid
 show_excerpts: true
 ---
 
-A variety of common markup showing how the theme styles them.
+<!--A variety of common markup showing how the theme styles them.
 
 # Header one
 
@@ -172,6 +172,8 @@ Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should 
 ### Variable Tag
 
 This allows you to denote <var>variables</var>.
+
+-->
 
 {% include base_path %}
 <div class="grid__wrapper">
