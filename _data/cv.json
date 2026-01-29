@@ -37,14 +37,8 @@
       "studyType": "BS (Honours with Research)",
       "startDate": "2023",
       "endDate": "2027",
-      "gpa": {
-        "Semester 1": "8.5",
-        "Semester 2": "8.5",
-        "Semester 3": "8.5",
-        "Semester 4": "8.9",
-        "Semester 5": "9.0",
-        "CGPA": "8.68"
-      },
+      "gpa": "CGPA: 8.68 (Sem 1–5: 8.5, 8.5, 8.5, 8.9, 9.0)"
+
       "courses": [
         "Molecular Biology",
         "Genetics",
