@@ -1,17 +1,27 @@
 ---
-layout: archive
-permalink: /categories/
 title: "Posts by Category"
-author_profile: true
+layout: archive
+permalink: /category-archive/
+entries_layout: grid
+show_excerpts: true
 ---
-
 {% include base_path %}
-{% include group-by-array collection=site.posts field="categories" %}
 
-{% for category in group_names %}
-  {% assign posts = group_items[forloop.index0] %}
-  <h2 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h2>
-  {% for post in posts %}
-    {% include archive-single.html %}
-  {% endfor %}
+{% assign sorted_categories = site.categories | sort %}
+
+{% for category in sorted_categories %}
+  {% assign category_name = category[0] %}
+  {% assign posts_in_category = category[1] %}
+
+  <section id="{{ category_name | slugify }}" class="taxonomy-section">
+    <h2 class="archive__subtitle">{{ category_name | capitalize }}</h2>
+
+    <div class="grid__wrapper">
+      {% for post in posts_in_category %}
+        {% assign post = post %}
+        {% include archive-single.html type="grid" %}
+      {% endfor %}
+    </div>
+  </section>
+
 {% endfor %}
