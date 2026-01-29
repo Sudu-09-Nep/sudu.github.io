@@ -2,13 +2,32 @@
 title: "Blog posts"
 layout: archive
 permalink: /year-archive/
-entries_layout: grid
 show_excerpts: true
 ---
 
 {% include base_path %}
-<div class="grid__wrapper">
+
+<div class="kp-list">
   {% for post in site.posts %}
-    {% include archive-single.html type="grid" %}
+  <article class="kp-item">
+    <a class="kp-item-image" href="{{ post.url | relative_url }}">
+      {% if post.header.teaser %}
+      <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}">
+      {% endif %}
+    </a>
+    <div class="kp-item-body">
+      <h2 class="kp-item-title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h2>
+      <p class="kp-item-meta">
+        {{ post.date | date: "%B %d, %Y" }}
+      </p>
+      {% if post.excerpt %}
+      <p class="kp-item-excerpt">
+        {{ post.excerpt | strip_newlines | truncate: 160 }}
+      </p>
+      {% endif %}
+    </div>
+  </article>
   {% endfor %}
 </div>
