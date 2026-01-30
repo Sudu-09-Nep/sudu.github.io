@@ -203,15 +203,16 @@
 
 .blog-category-link {
   font-size: 0.85rem;
-  padding: 0.3rem 0.7rem;
-  border-radius: 999px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px; /* pill shape */
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  background: #f5f5f5;
   text-decoration: none;
-  color: inherit;
+  color: #222;
 }
 
 .blog-category-link:hover {
-  background: rgba(0, 0, 0, 0.03);
+  background: #e9e9e9;
 }
 
 .blog-category-link.is-active {
