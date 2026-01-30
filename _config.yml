@@ -22,8 +22,8 @@ repository               : "Sudu-09-Nep/sudu.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/images/bio-photo.jpg"
   name             : "Sudarshan Aryal"
+  avatar           : "/images/bio-photo.jpg"
   pronouns         : "he/his"  
   bio              : "Undergraduate Bioscience and Biotechnology Student"
   location         : "Malika Rural Municipality-4-Gulmi, Nepal"
