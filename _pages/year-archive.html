@@ -7,6 +7,22 @@ show_excerpts: true
 
 {% include base_path %}
 
+<div class="blog-category-bar">
+  <span class="blog-category-label">Topics:</span>
+  <a href="{{ '/year-archive/' | relative_url }}" class="blog-category-link is-active">
+    All
+  </a>
+  <a href="{{ '/category/nature/' | relative_url }}" class="blog-category-link">
+    Nature
+  </a>
+  <a href="{{ '/category/reflection/' | relative_url }}" class="blog-category-link">
+    Reflection
+  </a>
+  <a href="{{ '/category/random-thoughts/' | relative_url }}" class="blog-category-link">
+    Random thoughts
+  </a>
+</div>
+
 <div class="kp-list">
   {% for post in site.posts %}
   <article class="kp-item">
