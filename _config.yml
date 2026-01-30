@@ -14,7 +14,6 @@ title_separator          : "-"
 name                     : &name "Sudarshan Aryal"
 description              : &description "Undergraduate Bioscience and Biotechnology Student"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : "https://sudu-09-nep.github.io" # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
-                                                           # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "/sudu.github.io" # the subpath of your site, e.g. "/blog"
 repository               : "Sudu-09-Nep/sudu.github.io"
 
