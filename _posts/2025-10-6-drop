@@ -4,7 +4,7 @@ title: "A Drop's Journey: From Dew to Hope"
 date: 2025-10-06
 categories: nature
 header:
-  teaser: /images/drop.png
+  teaser: /images/dew.jpeg
 tags:
   - nature
   - climate-change
@@ -15,7 +15,7 @@ tags:
 
 *This is a revised version of a story originally published on my Substack newsletter **Beauty of Nature**.*
 
-![A Drop's Journey cover]({{ "/images/drop.png" | relative_url }})
+![A Drop's Journey cover]({{ "/images/dew.jpeg" | relative_url }})
 
 ## A Drop's Journey 
 
