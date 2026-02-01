@@ -11,9 +11,6 @@ tags:
   - wildlife
   - storytelling
 ---
-
-
-
 ## Opening
 In a meadow once alive with song, a patient predator hunts, leaving only silence, and one survivor to face the end alone.
 
