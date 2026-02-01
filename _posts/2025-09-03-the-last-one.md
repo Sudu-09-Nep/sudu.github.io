@@ -11,7 +11,7 @@ tags:
   - wildlife
   - storytelling
 ---
-## Opening
+**Opening**     
 In a meadow once alive with song, a patient predator hunts, leaving only silence, and one survivor to face the end alone.
 
 ![The Last One cover]({{ "/images/the-last-one-cover.jpg" | relative_url }})
