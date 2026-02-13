@@ -8,7 +8,8 @@
    sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap');
+
 
 @import
     "vendor/breakpoint/breakpoint",
@@ -223,7 +224,7 @@
   border-color:  #0066cc;
 }
 body {
-  background-color: #d7efff; 
+  background-color: #e9f5ff; 
 }
 body {
   font-family: "Poppins", -apple-system, "SFNSText-Regular", "San Francisco",
@@ -232,9 +233,10 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins", -apple-system, "SFNSText-Regular", "San Francisco",
-               "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande",
-               Arial, sans-serif;
+  font-family: "Space Mono", "SFMono-Regular", ui-monospace, Menlo, Monaco,
+               Consolas, "Liberation Mono", "Courier New", monospace;
 }
+
+  
 
 
