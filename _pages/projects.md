@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Projects"
-permalink: /sudu.github.io/projects/
+permalink: /projects/
 author_profile: true
 ---
 
