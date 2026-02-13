@@ -13,7 +13,7 @@ tags:
 **Opening**     
 Life becomes truly beautiful when we find joy in the mundane moments.
 
-![Love itself is a prayer]({{ "/images/Love_prayer.tiff" | relative_url }})
+![Love itself is a prayer]({{ "/images/love_prayer.tiff" | relative_url }})
 
 [Source:-https://unsplash.com/photos/-djILB4V8uM]
 
