@@ -1,6 +1,7 @@
 ---
 title: "Hybrid ONT–Illumina genome assembly"
 layout: single
+date: 2026-01-06
 permalink: /projects/ont-illumina-hybrid-assembly/
 ---
 
