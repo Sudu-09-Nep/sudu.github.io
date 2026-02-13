@@ -9,6 +9,8 @@ Here are some of the projects and workflows I’m exploring as an undergraduate 
 
 {% include base_path %}
 
-{% for project in site.projects %}
-  {% include archive-single.html %}
+{% assign all_projects = site.projects | sort: 'date' | reverse %}
+
+{% for project in all_projects %}
+  {% include archive-single.html type='projects' %}
 {% endfor %}
