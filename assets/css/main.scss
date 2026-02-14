@@ -236,6 +236,25 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Space Mono", "SFMono-Regular", ui-monospace, Menlo, Monaco,
                Consolas, "Liberation Mono", "Courier New", monospace;
 }
+/* Light mode background (day) */
+body {
+  background-color: #e6f4ff; /* sky blue */
+}
+
+/* Dark mode background (night) */
+html.dark body,
+body.dark,
+html.theme--dark body {
+  background-color: #050b12;   /* very dark navy */
+  color: #e5f0ff;              /* light text */
+}
+
+/* Links in dark mode */
+html.dark a,
+body.dark a,
+html.theme--dark a {
+  color: #8cc8ff;
+}
 
   
 
