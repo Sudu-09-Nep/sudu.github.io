@@ -236,17 +236,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Space Mono", "SFMono-Regular", ui-monospace, Menlo, Monaco,
                Consolas, "Liberation Mono", "Courier New", monospace;
 }
-/* Light mode background (day) */
+/* Day (light) mode */
 body {
   background-color: #e6f4ff; /* sky blue */
+  color: #111111;           /* dark text */
 }
 
-/* Dark mode background (night) */
+/* Night (dark) mode – cover both common class patterns */
 html.dark body,
 body.dark,
 html.theme--dark body {
-  background-color: #050b12;   /* very dark navy */
-  color: #e5f0ff;              /* light text */
+  background-color: #050b12;  /* very dark navy */
+  color: #e5f0ff;             /* light text */
 }
 
 /* Links in dark mode */
@@ -255,6 +256,15 @@ body.dark a,
 html.theme--dark a {
   color: #8cc8ff;
 }
+
+/* Sidebar/author box in dark mode (so text stays readable) */
+html.dark .sidebar,
+body.dark .sidebar,
+html.theme--dark .sidebar {
+  background-color: #050b12;
+  color: #e5f0ff;
+}
+
 
   
 
