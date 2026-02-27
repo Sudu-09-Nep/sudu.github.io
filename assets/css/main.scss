@@ -1,271 +1,82 @@
----
----
-
-/*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
- */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap');
-
-
-@import
-    "vendor/breakpoint/breakpoint",
-
-    "themes",
-    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
-
-    "include/mixins",
-    "vendor/susy/susy",
-
-    "layout/reset",
-    "layout/base",
-
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-    "syntax",
-
-    "layout/forms",
-
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar",
-    "layout/json_cv",
-
-    "vendor/font-awesome/fontawesome",
-    "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
-;
-
-/* Blog archive card grid */
-
-.post-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.post-card {
-  background: #ffffff;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.post-card-image img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  display: block;
-}
-
-.post-card-content {
-  padding: 1rem 1.1rem 1.2rem;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.post-card-title {
-  font-size: 1.05rem;
-  margin: 0 0 0.4rem;
-}
-
-.post-card-title a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.post-card-title a:hover {
-  text-decoration: underline;
-}
-
-.post-card-meta {
-  font-size: 0.85rem;
-  color: #777;
-  margin: 0 0 0.6rem;
-}
-
-.post-card-excerpt {
-  font-size: 0.9rem;
-  color: #444;
-  margin: 0;
-}
-
-/* Optional: tighten archive page width a bit on large screens */
-@media (min-width: 57.8125em) {
-  .page--archive .page__content {
-    max-width: 100%;
-  }
-}
-/* KP-style vertical story list */
-
-.kp-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  margin-top: 1.5rem;
-}
-
-/* Each story = horizontal card */
-.kp-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  padding-bottom: 1.25rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-/* Thumbnail block on the left */
-.kp-item-image {
-  flex: 0 0 180px;
-  max-width: 180px;
-}
-
-/* Actual thumbnail size */
-.kp-item-image img {
-  display: block;
-  width: 100%;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 4px;
-}
-
-/* Text block on the right */
-.kp-item-body {
-  flex: 1 1 auto;
-}
-
-.kp-item-title {
-  font-size: 1.1rem;
-  margin: 0 0 0.3rem;
-}
-
-.kp-item-title a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.kp-item-title a:hover {
-  text-decoration: underline;
-}
-
-.kp-item-meta {
-  font-size: 0.85rem;
-  color: #777;
-  margin: 0 0 0.4rem;
-}
-
-.kp-item-excerpt {
-  font-size: 0.9rem;
-  color: #444;
-  margin: 0;
-}
-
-/* On phones: stack image above text */
-@media (max-width: 600px) {
-  .kp-item {
-    flex-direction: column;
-  }
-
-  .kp-item-image {
-    flex: 0 0 auto;
-    max-width: 100%;
-  }
-
-  .kp-item-image img {
-    width: 100%;
-    height: 180px;
-  }
-}
-.blog-category-bar {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem;
-  margin: 0.5rem 0 1rem;
-}
-
-.blog-category-label {
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin-right: 0.25rem;
-}
-
-.blog-category-link {
-  font-size: 0.9rem;
-  padding: 0.4rem 1.1rem;
-  border-radius: 999px; /* pill shape */
-  border: 1px solid rgba(0, 0, 0, 0.18);
-  background: #f5f5f5;
-  text-decoration: none;
-  color: #222;
-}
-
-.blog-category-link:hover {
-  background: #e0e0e0;
-}
-
-.blog-category-link.is-active {
-  background: #0066cc;      
-  color: #ffffff;
-  border-color:  #0066cc;
-}
-body {
-  background-color: #e9f5ff; 
-}
-body {
-  font-family: "Poppins", -apple-system, "SFNSText-Regular", "San Francisco",
-               "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande",
-               Arial, sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Space Mono", "SFMono-Regular", ui-monospace, Menlo, Monaco,
-               Consolas, "Liberation Mono", "Courier New", monospace;
-}
-/* Day (light) mode */
-body {
-  background-color: #e6f4ff; /* sky blue */
-  color: #111111;           /* dark text */
-}
-
-/* Night (dark) mode – cover both common class patterns */
-html.dark body,
-body.dark,
-html.theme--dark body {
-  background-color: #050b12;  /* very dark navy */
-  color: #e5f0ff;             /* light text */
-}
-
-/* Links in dark mode */
-html.dark a,
-body.dark a,
-html.theme--dark a {
-  color: #8cc8ff;
-}
-
-/* Sidebar/author box in dark mode (so text stays readable) */
-html.dark .sidebar,
-body.dark .sidebar,
-html.theme--dark .sidebar {
-  background-color: #050b12;
-  color: #e5f0ff;
-}
-
-
-  
-
-
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/assets/css/main.scss b/assets/css/main.scss
+index a9bfd284b9e8129e2253e982f1dd1a5be1f348b3..74eb0b6a4255aec4e77d2a2601fc00ede044a543 100644
+--- a/assets/css/main.scss
++++ b/assets/css/main.scss
+@@ -201,71 +201,67 @@
+ .blog-category-label {
+   font-size: 0.9rem;
+   font-weight: 600;
+   margin-right: 0.25rem;
+ }
+ 
+ .blog-category-link {
+   font-size: 0.9rem;
+   padding: 0.4rem 1.1rem;
+   border-radius: 999px; /* pill shape */
+   border: 1px solid rgba(0, 0, 0, 0.18);
+   background: #f5f5f5;
+   text-decoration: none;
+   color: #222;
+ }
+ 
+ .blog-category-link:hover {
+   background: #e0e0e0;
+ }
+ 
+ .blog-category-link.is-active {
+   background: #0066cc;      
+   color: #ffffff;
+   border-color:  #0066cc;
+ }
+-body {
+-  background-color: #e9f5ff; 
+-}
+ body {
+   font-family: "Poppins", -apple-system, "SFNSText-Regular", "San Francisco",
+                "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande",
+                Arial, sans-serif;
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+   font-family: "Space Mono", "SFMono-Regular", ui-monospace, Menlo, Monaco,
+                Consolas, "Liberation Mono", "Courier New", monospace;
+ }
+-/* Day (light) mode */
++/* Day (light) mode: Stanford-like neutral gray background */
+ body {
+-  background-color: #e6f4ff; /* sky blue */
++  background-color: #f4f4f4;
+   color: #111111;           /* dark text */
+ }
+ 
+ /* Night (dark) mode – cover both common class patterns */
+ html.dark body,
+ body.dark,
+ html.theme--dark body {
+   background-color: #050b12;  /* very dark navy */
+   color: #e5f0ff;             /* light text */
+ }
+ 
+ /* Links in dark mode */
+ html.dark a,
+ body.dark a,
+ html.theme--dark a {
+   color: #8cc8ff;
+ }
+ 
+ /* Sidebar/author box in dark mode (so text stays readable) */
+ html.dark .sidebar,
+ body.dark .sidebar,
+ html.theme--dark .sidebar {
+   background-color: #050b12;
+   color: #e5f0ff;
+ }
+ 
+ 
+   
+ 
+-
+ 
+EOF
+)
