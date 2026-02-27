@@ -1,9 +1,9 @@
  (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
 diff --git a/assets/css/main.scss b/assets/css/main.scss
-index a9bfd284b9e8129e2253e982f1dd1a5be1f348b3..d3acae073cb08aa41b614885d683e5cd0bf607f8 100644
+index a9bfd284b9e8129e2253e982f1dd1a5be1f348b3..991ec28c94cd4e3bae1373da8a3a6504e9b63417 100644
 --- a/assets/css/main.scss
 +++ b/assets/css/main.scss
-@@ -201,71 +201,88 @@
+@@ -201,71 +201,86 @@
  .blog-category-label {
    font-size: 0.9rem;
    font-weight: 600;
@@ -50,29 +50,27 @@ index a9bfd284b9e8129e2253e982f1dd1a5be1f348b3..d3acae073cb08aa41b614885d683e5cd
    color: #111111;           /* dark text */
  }
  
-+/* Section-colored navigation tabs (light mode only) */
-+html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-projects > a,
-+html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-blog-posts > a,
-+html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-portfolio > a,
-+html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-cv > a {
-+  color: #ffffff;
-+  border-radius: 4px;
-+  padding: 0.35rem 0.65rem;
-+  display: inline-block;
-+  line-height: 1.2;
++
++/* Stanford-like structured masthead (light mode only) */
++html:not(.dark):not(.theme--dark) .masthead {
++  background-color: #8c1515;
++  border-bottom: 0;
 +}
 +
-+html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-projects > a { background-color: #8c1515; }
-+html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-blog-posts > a { background-color: #006b81; }
-+html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-portfolio > a { background-color: #4d3f99; }
-+html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-cv > a { background-color: #2f7a3e; }
++html:not(.dark):not(.theme--dark) .masthead__menu-item > a {
++  color: #ffffff;
++  font-weight: 500;
++  padding: 0.5rem 0.75rem;
++  border-radius: 2px;
++}
 +
-+html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-projects.selected > a,
-+html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-blog-posts.selected > a,
-+html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-portfolio.selected > a,
-+html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-cv.selected > a {
-+  box-shadow: 0 0 0 2px rgba(17, 17, 17, 0.15) inset;
-+  border-bottom: 0;
++html:not(.dark):not(.theme--dark) .masthead__menu-item > a:hover {
++  background-color: rgba(255, 255, 255, 0.12);
++  text-decoration: none;
++}
++
++html:not(.dark):not(.theme--dark) .masthead__menu-item.selected > a {
++  background-color: #6f1111;
 +}
 +
  /* Night (dark) mode – cover both common class patterns */
