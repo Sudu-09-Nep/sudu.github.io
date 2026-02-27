@@ -1,9 +1,9 @@
  (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
 diff --git a/assets/css/main.scss b/assets/css/main.scss
-index a9bfd284b9e8129e2253e982f1dd1a5be1f348b3..66477c461344638c3ce0506d179a021bd52d652c 100644
+index a9bfd284b9e8129e2253e982f1dd1a5be1f348b3..c7d416d73b38412e74d7b6edaa9e2ff29c4915aa 100644
 --- a/assets/css/main.scss
 +++ b/assets/css/main.scss
-@@ -201,71 +201,96 @@
+@@ -201,71 +201,79 @@
  .blog-category-label {
    font-size: 0.9rem;
    font-weight: 600;
@@ -43,13 +43,29 @@ index a9bfd284b9e8129e2253e982f1dd1a5be1f348b3..66477c461344638c3ce0506d179a021b
                 Consolas, "Liberation Mono", "Courier New", monospace;
  }
 -/* Day (light) mode */
-+/* Day (light) mode: Stanford-like neutral gray background */
++/* Day (light) mode background */
  body {
 -  background-color: #e6f4ff; /* sky blue */
 +  background-color: #f4f4f4;
    color: #111111;           /* dark text */
  }
  
++
++
++/* Stanford-style red boxes for section headers (light mode only) */
++html:not(.dark):not(.theme--dark) .page__content h2,
++html:not(.dark):not(.theme--dark) .archive h2,
++html:not(.dark):not(.theme--dark) .page__content h3,
++html:not(.dark):not(.theme--dark) .archive h3 {
++  display: inline-block;
++  background-color: #8c1515;
++  color: #ffffff;
++  padding: 0.3rem 0.7rem;
++  border-radius: 4px;
++  margin-bottom: 0.6rem;
++  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
++}
++
  /* Night (dark) mode – cover both common class patterns */
  html.dark body,
  body.dark,
@@ -72,40 +88,11 @@ index a9bfd284b9e8129e2253e982f1dd1a5be1f348b3..66477c461344638c3ce0506d179a021b
    background-color: #050b12;
    color: #e5f0ff;
  }
- 
-+/* Professional polish for light mode */
-+html:not(.dark):not(.theme--dark) .masthead {
-+  background-color: #ffffff;
-+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.06);
-+}
-+
-+html:not(.dark):not(.theme--dark) a:not(.btn) {
-+  color: #8c1515;
-+  text-underline-offset: 0.16em;
-+}
-+
-+html:not(.dark):not(.theme--dark) a:not(.btn):hover {
-+  color: #5f0e0e;
-+}
- 
+-
+-
 -  
-+html:not(.dark):not(.theme--dark) .page__content,
-+html:not(.dark):not(.theme--dark) .archive {
-+  background-color: #ffffff;
-+  border: 1px solid #e5e7eb;
-+  border-radius: 12px;
-+  padding: 1.25rem;
-+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
-+}
- 
-+html:not(.dark):not(.theme--dark) .btn {
-+  background-color: #8c1515;
-+  border-radius: 999px;
-+}
- 
-+html:not(.dark):not(.theme--dark) .btn:hover {
-+  background-color: #5f0e0e;
-+}
+-
+-
  
 EOF
 )
