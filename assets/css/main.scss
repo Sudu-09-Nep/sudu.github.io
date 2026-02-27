@@ -1,9 +1,9 @@
  (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
 diff --git a/assets/css/main.scss b/assets/css/main.scss
-index a9bfd284b9e8129e2253e982f1dd1a5be1f348b3..c7d416d73b38412e74d7b6edaa9e2ff29c4915aa 100644
+index a9bfd284b9e8129e2253e982f1dd1a5be1f348b3..d3acae073cb08aa41b614885d683e5cd0bf607f8 100644
 --- a/assets/css/main.scss
 +++ b/assets/css/main.scss
-@@ -201,71 +201,79 @@
+@@ -201,71 +201,88 @@
  .blog-category-label {
    font-size: 0.9rem;
    font-weight: 600;
@@ -50,20 +50,29 @@ index a9bfd284b9e8129e2253e982f1dd1a5be1f348b3..c7d416d73b38412e74d7b6edaa9e2ff2
    color: #111111;           /* dark text */
  }
  
-+
-+
-+/* Stanford-style red boxes for section headers (light mode only) */
-+html:not(.dark):not(.theme--dark) .page__content h2,
-+html:not(.dark):not(.theme--dark) .archive h2,
-+html:not(.dark):not(.theme--dark) .page__content h3,
-+html:not(.dark):not(.theme--dark) .archive h3 {
-+  display: inline-block;
-+  background-color: #8c1515;
++/* Section-colored navigation tabs (light mode only) */
++html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-projects > a,
++html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-blog-posts > a,
++html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-portfolio > a,
++html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-cv > a {
 +  color: #ffffff;
-+  padding: 0.3rem 0.7rem;
 +  border-radius: 4px;
-+  margin-bottom: 0.6rem;
-+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
++  padding: 0.35rem 0.65rem;
++  display: inline-block;
++  line-height: 1.2;
++}
++
++html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-projects > a { background-color: #8c1515; }
++html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-blog-posts > a { background-color: #006b81; }
++html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-portfolio > a { background-color: #4d3f99; }
++html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-cv > a { background-color: #2f7a3e; }
++
++html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-projects.selected > a,
++html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-blog-posts.selected > a,
++html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-portfolio.selected > a,
++html:not(.dark):not(.theme--dark) .masthead__menu-item.nav-cv.selected > a {
++  box-shadow: 0 0 0 2px rgba(17, 17, 17, 0.15) inset;
++  border-bottom: 0;
 +}
 +
  /* Night (dark) mode – cover both common class patterns */
