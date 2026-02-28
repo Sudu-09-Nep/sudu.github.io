@@ -1,105 +1,183 @@
- (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
-diff --git a/assets/css/main.scss b/assets/css/main.scss
-index a9bfd284b9e8129e2253e982f1dd1a5be1f348b3..991ec28c94cd4e3bae1373da8a3a6504e9b63417 100644
---- a/assets/css/main.scss
-+++ b/assets/css/main.scss
-@@ -201,71 +201,86 @@
- .blog-category-label {
-   font-size: 0.9rem;
-   font-weight: 600;
-   margin-right: 0.25rem;
- }
- 
- .blog-category-link {
-   font-size: 0.9rem;
-   padding: 0.4rem 1.1rem;
-   border-radius: 999px; /* pill shape */
-   border: 1px solid rgba(0, 0, 0, 0.18);
-   background: #f5f5f5;
-   text-decoration: none;
-   color: #222;
- }
- 
- .blog-category-link:hover {
-   background: #e0e0e0;
- }
- 
- .blog-category-link.is-active {
-   background: #0066cc;      
-   color: #ffffff;
-   border-color:  #0066cc;
- }
--body {
--  background-color: #e9f5ff; 
--}
- body {
-   font-family: "Poppins", -apple-system, "SFNSText-Regular", "San Francisco",
-                "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande",
-                Arial, sans-serif;
- }
- 
- h1, h2, h3, h4, h5, h6 {
-   font-family: "Space Mono", "SFMono-Regular", ui-monospace, Menlo, Monaco,
-                Consolas, "Liberation Mono", "Courier New", monospace;
- }
--/* Day (light) mode */
-+/* Day (light) mode background */
- body {
--  background-color: #e6f4ff; /* sky blue */
-+  background-color: #f4f4f4;
-   color: #111111;           /* dark text */
- }
- 
-+
-+/* Stanford-like structured masthead (light mode only) */
-+html:not(.dark):not(.theme--dark) .masthead {
-+  background-color: #8c1515;
-+  border-bottom: 0;
-+}
-+
-+html:not(.dark):not(.theme--dark) .masthead__menu-item > a {
-+  color: #ffffff;
-+  font-weight: 500;
-+  padding: 0.5rem 0.75rem;
-+  border-radius: 2px;
-+}
-+
-+html:not(.dark):not(.theme--dark) .masthead__menu-item > a:hover {
-+  background-color: rgba(255, 255, 255, 0.12);
-+  text-decoration: none;
-+}
-+
-+html:not(.dark):not(.theme--dark) .masthead__menu-item.selected > a {
-+  background-color: #6f1111;
-+}
-+
- /* Night (dark) mode – cover both common class patterns */
- html.dark body,
- body.dark,
- html.theme--dark body {
-   background-color: #050b12;  /* very dark navy */
-   color: #e5f0ff;             /* light text */
- }
- 
- /* Links in dark mode */
- html.dark a,
- body.dark a,
- html.theme--dark a {
-   color: #8cc8ff;
- }
- 
- /* Sidebar/author box in dark mode (so text stays readable) */
- html.dark .sidebar,
- body.dark .sidebar,
- html.theme--dark .sidebar {
-   background-color: #050b12;
-   color: #e5f0ff;
- }
--
--
--  
--
--
- 
-EOF
-)
+---
+---
+
+@charset "utf-8";
+
+// Import AcademicPages / Minimal Mistakes styles
+@import "minimal-mistakes";
+
+// ====== YOUR CUSTOM OVERRIDES BELOW THIS LINE ======
+
+// Blog category pills (for your year-archive page)
+.blog-category-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.blog-category-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-right: 0.25rem;
+}
+
+.blog-category-link {
+  font-size: 0.9rem;
+  padding: 0.4rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  background: #f5f5f5;
+  text-decoration: none;
+  color: #222;
+}
+
+.blog-category-link:hover {
+  background: #e0e0e0;
+}
+
+.blog-category-link.is-active {
+  background: #0066cc;
+  color: #ffffff;
+  border-color: #0066cc;
+}
+
+// Light mode background
+body {
+  background-color: #f4f4f4;
+  color: #111111;
+}
+
+// Fonts
+body {
+  font-family: "Poppins", -apple-system, "SFNSText-Regular", "San Francisco",
+               "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande",
+               Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Space Mono", "SFMono-Regular", ui-monospace, Menlo, Monaco,
+               Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+// Stanford-like masthead (light mode only)
+html:not(.dark):not(.theme--dark) .masthead {
+  background-color: #8c1515;
+  border-bottom: 0;
+}
+
+html:not(.dark):not(.theme--dark) .masthead__menu-item > a {
+  color: #ffffff;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 2px;
+}
+
+html:not(.dark):not(.theme--dark) .masthead__menu-item > a:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  text-decoration: none;
+}
+
+html:not(.dark):not(.theme--dark) .masthead__menu-item.selected > a {
+  background-color: #6f1111;
+}
+
+// Dark mode background and text
+html.dark body,
+body.dark,
+html.theme--dark body {
+  background-color: #050b12;
+  color: #e5f0ff;
+}
+
+// Dark mode links
+html.dark a,
+body.dark a,
+html.theme--dark a {
+  color: #8cc8ff;
+}
+
+// Dark mode sidebar
+html.dark .sidebar,
+body.dark .sidebar,
+html.theme--dark .sidebar {
+  background-color: #050b12;
+  color: #e5f0ff;
+}
+
+// Full-screen hero landing (uses your DNA image)
+.hero-landing {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/images/ChatGPT-Image-Feb-27-2026-at-08_20_23-AM.jpg"); // change if you renamed
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.40);
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 800px;
+  color: #ffffff;
+}
+
+.hero-name {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.hero-tagline {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  margin-bottom: 1.75rem;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.hero-button {
+  padding: 0.75rem 1.6rem;
+  border-radius: 999px;
+  background-color: #ffffff;
+  color: #1b1b1b;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.hero-button:hover {
+  background-color: #f0f0f0;
+}
+
+.hero-button-outline {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1.5px solid #ffffff;
+}
+
+.hero-button-outline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 600px) {
+  .hero-name {
+    font-size: 2.2rem;
+  }
+  .hero-tagline {
+    font-size: 1.05rem;
+  }
+}
