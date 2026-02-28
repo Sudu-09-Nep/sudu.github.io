@@ -40,13 +40,13 @@
   border-color: #0066cc;
 }
 
-// Light mode background
+/* Light mode background and text color only */
 body {
   background-color: #f4f4f4;
   color: #111111;
 }
 
-// Fonts
+/* Fonts */
 body {
   font-family: "Poppins", -apple-system, "SFNSText-Regular", "San Francisco",
                "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande",
@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
                Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-// Stanford-like masthead (light mode only)
+/* Stanford-like masthead (light mode only) */
 html:not(.dark):not(.theme--dark) .masthead {
   background-color: #8c1515;
   border-bottom: 0;
@@ -80,7 +80,7 @@ html:not(.dark):not(.theme--dark) .masthead__menu-item.selected > a {
   background-color: #6f1111;
 }
 
-// Dark mode background and text
+/* Dark mode background and text */
 html.dark body,
 body.dark,
 html.theme--dark body {
@@ -88,14 +88,14 @@ html.theme--dark body {
   color: #e5f0ff;
 }
 
-// Dark mode links
+/* Dark mode links */
 html.dark a,
 body.dark a,
 html.theme--dark a {
   color: #8cc8ff;
 }
 
-// Dark mode sidebar
+/* Dark mode sidebar */
 html.dark .sidebar,
 body.dark .sidebar,
 html.theme--dark .sidebar {
@@ -103,19 +103,19 @@ html.theme--dark .sidebar {
   color: #e5f0ff;
 }
 
-// Full-screen hero landing (uses your DNA image)
+/* Hero only affects pages that actually use the .hero-landing HTML */
 .hero-landing {
-  min-height: 100vh;
+  min-height: 80vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/images/dna-hero.png"); // change to .jpg if your file is dna-hero.jpg
+  background-image: url("/images/dna-hero.png"); /* change to .jpg if needed */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  margin: 0;
+  margin: 0 0 2rem 0; /* add bottom space so it doesn't hit next content */
 }
 
 .hero-overlay {
