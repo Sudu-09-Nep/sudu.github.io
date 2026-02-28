@@ -3,9 +3,6 @@
 
 @charset "utf-8";
 
-// Import AcademicPages / Minimal Mistakes styles
-@import "minimal-mistakes";
-
 // ====== YOUR CUSTOM OVERRIDES BELOW THIS LINE ======
 
 // Blog category pills (for your year-archive page)
@@ -113,7 +110,7 @@ html.theme--dark .sidebar {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/images/dna-hero.png"); // change if you renamed
+  background-image: url("/images/dna-hero.png"); // change to .jpg if your file is dna-hero.jpg
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
