@@ -136,5 +136,101 @@ body {
   object-fit: cover;
   display: block;
 }
+/* Category bar above blog list */
+.blog-category-bar {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+
+.blog-category-label {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.blog-category-link {
+  margin-right: 0.75rem;
+  text-decoration: none;
+  color: #4b5563;
+}
+
+.blog-category-link.is-active {
+  font-weight: 700;
+  color: #1f4e79;
+}
+
+/* Kathmandu Post-like list */
+.kp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.kp-item {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 1rem;
+}
+
+.kp-item-image img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+.kp-item-body {
+  flex: 1;
+}
+
+.kp-item-category {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #1f4e79;
+  margin-bottom: 0.15rem;
+}
+
+.kp-item-title {
+  font-size: 1.05rem;
+  margin: 0 0 0.2rem;
+}
+
+.kp-item-title a {
+  text-decoration: none;
+  color: #111827;
+}
+
+.kp-item-title a:hover {
+  text-decoration: underline;
+}
+
+.kp-item-meta {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin: 0 0 0.3rem;
+}
+
+.kp-item-excerpt {
+  font-size: 0.9rem;
+  color: #374151;
+  margin: 0;
+}
+
+/* Mobile: stack image above text */
+@media (max-width: 640px) {
+  .kp-item {
+    flex-direction: column;
+  }
+
+  .kp-item-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 
 
