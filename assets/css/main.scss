@@ -5,48 +5,13 @@
 
 // ====== YOUR CUSTOM OVERRIDES BELOW THIS LINE ======
 
-// Blog category pills (for your year-archive page)
-.blog-category-bar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.blog-category-label {
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin-right: 0.25rem;
-}
-
-.blog-category-link {
-  font-size: 0.9rem;
-  padding: 0.4rem 1.1rem;
-  border-radius: 999px;
-  border: 1px solid rgba(0, 0, 0, 0.18);
-  background: #f5f5f5;
-  text-decoration: none;
-  color: #222;
-}
-
-.blog-category-link:hover {
-  background: #e0e0e0;
-}
-
-.blog-category-link.is-active {
-  background: #0066cc;
-  color: #ffffff;
-  border-color: #0066cc;
-}
-
-/* Light mode background and text color only */
+// Light mode background and text
 body {
   background-color: #f4f4f4;
   color: #111111;
 }
 
-/* Fonts */
+// Fonts
 body {
   font-family: "Poppins", -apple-system, "SFNSText-Regular", "San Francisco",
                "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande",
@@ -58,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
                Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-/* Stanford-like masthead (light mode only) */
+// Stanford-like masthead (light mode only)
 html:not(.dark):not(.theme--dark) .masthead {
   background-color: #8c1515;
   border-bottom: 0;
@@ -80,7 +45,7 @@ html:not(.dark):not(.theme--dark) .masthead__menu-item.selected > a {
   background-color: #6f1111;
 }
 
-/* Dark mode background and text */
+// Dark mode background and text
 html.dark body,
 body.dark,
 html.theme--dark body {
@@ -88,14 +53,14 @@ html.theme--dark body {
   color: #e5f0ff;
 }
 
-/* Dark mode links */
+// Dark mode links
 html.dark a,
 body.dark a,
 html.theme--dark a {
   color: #8cc8ff;
 }
 
-/* Dark mode sidebar */
+// Dark mode sidebar
 html.dark .sidebar,
 body.dark .sidebar,
 html.theme--dark .sidebar {
@@ -103,19 +68,19 @@ html.theme--dark .sidebar {
   color: #e5f0ff;
 }
 
-/* Hero only affects pages that actually use the .hero-landing HTML */
+// Optional hero for homepage only (used if you add .hero-landing HTML)
 .hero-landing {
   min-height: 80vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/images/dna-hero.png"); /* change to .jpg if needed */
+  background-image: url("/images/dna-hero.png"); /* change extension if needed */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  margin: 0 0 2rem 0; /* add bottom space so it doesn't hit next content */
+  margin: 0 0 2rem 0;
 }
 
 .hero-overlay {
