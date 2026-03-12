@@ -1,4 +1,12 @@
-/* Top navigation like Kathmandu Post */
+/* Minimal custom styles for Sudarshan's site */
+
+/* Kathmandu Post-like horizontal nav */
+.greedy-nav {
+  border-bottom: 1px solid #ddd;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
 .greedy-nav ul {
   display: flex;
   gap: 1.5rem;
@@ -16,4 +24,78 @@
   font-weight: 600;
   font-size: 0.85rem;
   letter-spacing: 0.05em;
+  text-decoration: none;
+}
+
+/* Hero section on home page */
+.hero-landing {
+  position: relative;
+  min-height: 55vh;
+  background: linear-gradient(120deg, #111827, #1e293b);
+  color: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero-overlay {
+  max-width: 800px;
+  text-align: center;
+}
+
+.hero-name {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero-tagline {
+  font-size: 1.05rem;
+  max-width: 650px;
+  margin: 0 auto 1.5rem;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  background: #f97316;
+  color: #111827;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid #f97316;
+}
+
+.hero-button:hover {
+  background: #ea580c;
+  border-color: #ea580c;
+  color: #0b1120;
+}
+
+.hero-button-outline {
+  background: transparent;
+  color: #f9fafb;
+  border-color: #f9fafb;
+}
+
+.hero-button-outline:hover {
+  background: #f9fafb;
+  color: #0b1120;
+}
+
+/* Page content width */
+.page__content {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  padding: 0 1.25rem;
+  font-size: 1rem;
+  line-height: 1.7;
 }
