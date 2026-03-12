@@ -3,7 +3,7 @@ permalink: /
 title: "Sudarshan Aryal"
 layout: single
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
@@ -15,8 +15,8 @@ redirect_from:
       Bioscience & biotechnology student exploring genomics, bioinformatics, and stories woven into life’s code.
     </p>
     <div class="hero-links">
-      <a href="/year-archive/" class="hero-button">Read stories</a>
-      <a href="/projects/" class="hero-button hero-button-outline">View projects</a>
+      <a href="{{ '/year-archive/' | relative_url }}" class="hero-button">Read stories</a>
+      <a href "{{ '/projects/' | relative_url }}" class="hero-button hero-button-outline">View projects</a>
     </div>
   </div>
 </div>
