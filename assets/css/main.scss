@@ -1,6 +1,17 @@
-/* === Global reset === */
+/* === Global reset & background === */
 body {
   margin: 0;
+  min-height: 100vh;
+  background: url("/sudu.github.io/images/dna-hero.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Light overlay so header, sidebar, and content stay readable */
+.masthead,
+.sidebar,
+.page,
+.page__footer {
+  background-color: rgba(255, 255, 255, 0.88);
 }
 
 /* === Top horizontal navigation === */
@@ -27,7 +38,7 @@ body {
   margin-right: 2rem;
 }
 
-/* THIS is what makes the nav horizontal */
+/* This makes the nav horizontal */
 .greedy-nav ul {
   display: flex;
   gap: 1.5rem;
