@@ -1,26 +1,21 @@
 {% include base_path %}
-<div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button><span class="navicon"></span></button>
-        <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/' or page.url == '/index.html' %}selected{% endif %}">
-            <a href="{{ base_path }}/">{{ site.title }}</a>
-          </li>
-          {% for link in site.data.navigation.main %}
-            {% if link.url contains 'http' %}
-              {% assign domain = '' %}
-            {% else %}
-              {% assign domain = base_path %}
-            {% endif %}
-            <li class="masthead__menu-item nav-{{ link.title | slugify }} {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
-              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
-    </div>
+
+<nav class="top-nav">
+  <div class="top-nav-inner">
+    <a class="top-nav-title" href="{{ base_path }}/">
+      {{ site.title }}
+    </a>
+    <ul class="top-nav-menu">
+      {% for link in site.data.navigation.main %}
+        {% if link.url contains 'http' %}
+          {% assign domain = '' %}
+        {% else %}
+          {% assign domain = base_path %}
+        {% endif %}
+        <li>
+          <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
-</div>
+</nav>
