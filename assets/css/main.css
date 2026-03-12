@@ -125,11 +125,7 @@ body {
 
 /* === Main content card === */
 .page__content {
-  max-width: 800px;
-  margin: 0 auto 3rem;
-  padding: 0 1.25rem 2rem;
   font-size: 1rem;
   line-height: 1.7;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 0.75rem;
 }
+
