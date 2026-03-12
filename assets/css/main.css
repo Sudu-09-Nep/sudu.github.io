@@ -8,7 +8,6 @@ body {
 
 /* Light overlay so header, sidebar, and content stay readable */
 .masthead,
-.sidebar,
 .page,
 .page__footer {
   background-color: rgba(255, 255, 255, 0.88);
@@ -127,5 +126,9 @@ body {
 .page__content {
   font-size: 1rem;
   line-height: 1.7;
+}
+
+.author__avatar img {
+  border-radius: 50%;
 }
 
