@@ -237,6 +237,19 @@ collections:
     output: true
     permalink: /:collection/:path/
 
+navigation:
+  - title: "About"
+    url: /about/
+  - title: "Projects"
+    url: /projects/
+  - title: "Blog Posts"
+    url: /year-archive/
+  - title: "Portfolio"
+    url: /portfolio/
+  - title: "CV"
+    url: /cv-json/
+
+
 
 # These settings control how pages and collections are included in the site
 defaults:
