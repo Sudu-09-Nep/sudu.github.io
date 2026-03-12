@@ -1,145 +1,24 @@
----
----
-
-@charset "utf-8";
-
-// ====== YOUR CUSTOM OVERRIDES BELOW THIS LINE ======
-
-// Light mode background and text
-body {
-  background-color: #f4f4f4;
-  color: #111111;
-}
-
-// Fonts
-body {
-  font-family: "Poppins", -apple-system, "SFNSText-Regular", "San Francisco",
-               "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande",
-               Arial, sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Space Mono", "SFMono-Regular", ui-monospace, Menlo, Monaco,
-               Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-// Stanford-like masthead (light mode only)
-html:not(.dark):not(.theme--dark) .masthead {
-  background-color: #8c1515;
-  border-bottom: 0;
-}
-
-html:not(.dark):not(.theme--dark) .masthead__menu-item > a {
-  color: #ffffff;
-  font-weight: 500;
-  padding: 0.5rem 0.75rem;
-  border-radius: 2px;
-}
-
-html:not(.dark):not(.theme--dark) .masthead__menu-item > a:hover {
-  background-color: rgba(255, 255, 255, 0.12);
-  text-decoration: none;
-}
-
-html:not(.dark):not(.theme--dark) .masthead__menu-item.selected > a {
-  background-color: #6f1111;
-}
-
-// Dark mode background and text
-html.dark body,
-body.dark,
-html.theme--dark body {
-  background-color: #050b12;
-  color: #e5f0ff;
-}
-
-// Dark mode links
-html.dark a,
-body.dark a,
-html.theme--dark a {
-  color: #8cc8ff;
-}
-
-// Dark mode sidebar
-html.dark .sidebar,
-body.dark .sidebar,
-html.theme--dark .sidebar {
-  background-color: #050b12;
-  color: #e5f0ff;
-}
-
-// Optional hero for homepage only (used if you add .hero-landing HTML)
-.hero-landing {
-  min-height: 80vh;
-  width: 100%;
+/* Top navigation like Kathmandu Post */
+.masthead__menu {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url("/images/dna-hero.png"); /* change extension if needed */
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative;
-  margin: 0 0 2rem 0;
+  justify-content: center;   /* or flex-start if you want left aligned */
 }
 
-.hero-overlay {
-  background: rgba(0, 0, 0, 0.40);
-  padding: 3rem 2rem;
-  border-radius: 12px;
-  text-align: center;
-  max-width: 800px;
-  color: #ffffff;
+.masthead__menu ul {
+  display: flex;
+  gap: 1.5rem;               /* space between items */
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.hero-name {
-  font-size: 3rem;
+.masthead__menu li {
+  margin: 0;
+}
+
+.masthead__menu a {
+  text-transform: uppercase;
   font-weight: 600;
-  margin-bottom: 0.75rem;
-}
-
-.hero-tagline {
-  font-size: 1.25rem;
-  line-height: 1.7;
-  margin-bottom: 1.75rem;
-}
-
-.hero-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.hero-button {
-  padding: 0.75rem 1.6rem;
-  border-radius: 999px;
-  background-color: #ffffff;
-  color: #1b1b1b;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.95rem;
-}
-
-.hero-button:hover {
-  background-color: #f0f0f0;
-}
-
-.hero-button-outline {
-  background-color: transparent;
-  color: #ffffff;
-  border: 1.5px solid #ffffff;
-}
-
-.hero-button-outline:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-@media (max-width: 600px) {
-  .hero-name {
-    font-size: 2.2rem;
-  }
-  .hero-tagline {
-    font-size: 1.05rem;
-  }
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
 }
