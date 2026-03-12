@@ -16,7 +16,7 @@ redirect_from:
     </p>
     <div class="hero-links">
       <a href="{{ '/year-archive/' | relative_url }}" class="hero-button">Read stories</a>
-      <a href "{{ '/projects/' | relative_url }}" class="hero-button hero-button-outline">View projects</a>
+      <a href="{{ '/projects/' | relative_url }}" class="hero-button hero-button-outline">View projects</a>
     </div>
   </div>
 </div>
