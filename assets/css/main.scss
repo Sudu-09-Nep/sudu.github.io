@@ -1,22 +1,17 @@
 /* Top navigation like Kathmandu Post */
-.masthead__menu {
+.greedy-nav ul {
   display: flex;
-  justify-content: center;   /* or flex-start if you want left aligned */
-}
-
-.masthead__menu ul {
-  display: flex;
-  gap: 1.5rem;               /* space between items */
+  gap: 1.5rem;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.masthead__menu li {
+.greedy-nav li {
   margin: 0;
 }
 
-.masthead__menu a {
+.greedy-nav a {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 0.85rem;
