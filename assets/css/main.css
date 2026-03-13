@@ -19,9 +19,9 @@ body {
 .sidebar {
   flex: 0 0 260px; /* fixed-ish width sidebar */
 }
-page {
+.page {
   flex: 1;
-  padding-top: 0.5rem;    /* start a bit below masthead */
+  padding-top: 1rem;    /* start a bit below masthead */
 }
 
 /* Light overlay so header, sidebar, and content stay readable */
@@ -142,8 +142,13 @@ page {
 
 /* === Main content card === */
 .page__content {
+  max-width: 780px;
+  padding: 1.5rem 2rem 2.5rem;
+  margin: 0 0 3rem;
   font-size: 1rem;
   line-height: 1.7;
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 0.75rem;
 }
 /* Restore original-style avatar size and shape */
 .author__avatar img {
