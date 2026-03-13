@@ -1,8 +1,10 @@
-/* === Global reset & background === */
+/* Subtle DNA background */
 body {
   margin: 0;
   min-height: 100vh;
-  background: url("/sudu.github.io/images/dna-hero.png") no-repeat center center fixed;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url("/sudu.github.io/images/dna-hero.png") no-repeat center top fixed;
   background-size: cover;
 }
 
