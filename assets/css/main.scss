@@ -1,3 +1,12 @@
+/* Subtle DNA background */
+/* body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url("/sudu.github.io/images/dna-hero.png") no-repeat center top fixed;
+  background-size: cover;
+}  */
 /* === Global reset & background === */
 body {
   margin: 0;
@@ -5,10 +14,55 @@ body {
   background: url("/sudu.github.io/images/dna-hero.png") no-repeat center center fixed;
   background-size: cover;
 }
+/* Global text and link colors */
+body {
+  color: #1f2933;  /* dark slate instead of black */
+}
+
+.page__content {
+  color: #1f2933;
+}
+
+a {
+  color: #1f4e79;
+}
+
+a:hover {
+  color: #0b3b63;
+}
+
+/* Make content start near the top next to sidebar */
+/* Two-column layout: sidebar left, content right */
+#main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+  display: flex;
+  gap: 4rem;
+}
+.sidebar {
+  flex: 0 0 260px; /* fixed-ish width sidebar */
+}
+/* Make author card hug the left and not too wide */
+.sidebar .card {
+  max-width: 260px;
+  margin: 0 0 1.5rem;
+}
+
+/* Tighten inner content a bit */
+.author__content,
+.author__urls-wrapper {
+  margin-top: 0.75rem;
+}
+
+.page {
+  flex: 1;
+  padding-top: 1rem;    /* start a bit below masthead */
+}
+
 
 /* Light overlay so header, sidebar, and content stay readable */
 .masthead,
-.sidebar,
 .page,
 .page__footer {
   background-color: rgba(255, 255, 255, 0.88);
@@ -125,11 +179,231 @@ body {
 
 /* === Main content card === */
 .page__content {
-  max-width: 800px;
-  margin: 0 auto 3rem;
-  padding: 0 1.25rem 2rem;
+  max-width: 780px;
+  padding: 1.5rem 2rem 2.5rem;
+  margin: 0 0 3rem;
   font-size: 1rem;
   line-height: 1.7;
-  background: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.92);
   border-radius: 0.75rem;
 }
+.topics-bar {
+  margin: 0 0 1.5rem;
+  padding: 0.5rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.topics-label {
+  font-weight: 600;
+}
+
+.topics-bar a {
+  text-decoration: none;
+  color: #555;
+}
+
+.topics-bar a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Restore original-style avatar size and shape */
+.author__avatar img {
+  width: 120px;
+  height: 120px;
+  max-width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+/* Category bar above blog list */
+.blog-category-bar {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+
+.blog-category-label {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.blog-category-link {
+  margin-right: 0.75rem;
+  text-decoration: none;
+  color: #4b5563;
+}
+
+.blog-category-link.is-active {
+  font-weight: 700;
+  color: #1f4e79;
+}
+/* Make single blog posts comfortable to read */
+.post {
+  max-width: 800px;
+  margin: 0 0 3rem;
+}
+
+.post .page__content {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.post .page__title {
+  margin-bottom: 0.5rem;
+}
+/* Wide single-post layout */
+.post--wide .page {
+  flex: 1;
+}
+
+.post--wide .page__content {
+  max-width: 960px;              /* wider than normal */
+  margin: 0 auto 3rem;
+  padding: 2rem 2.5rem 3rem;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 0.75rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+.card {
+  max-width: 900px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Generic white hero heading used on Blog, Projects, Portfolio, CV */
+.section-hero {
+  margin: 1.5rem 0 1.5rem;
+}
+
+.section-hero__title {
+  font-size: 2.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 0.5rem;
+}
+
+/* Optional filters/links under the title */
+.section-hero__filters {
+  font-size: 0.9rem;
+}
+
+.section-hero__label {
+  font-weight: 600;
+  margin-right: 0.75rem;
+  color: #f9fafb;
+}
+
+.section-hero__link {
+  margin-right: 0.75rem;
+  text-decoration: none;
+  color: #e5e7eb;
+}
+
+.section-hero__link.is-active {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.section-hero__link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+/* Hide default page title when we use custom hero heading */
+.page__inner-wrap.has-section-hero > header.page__header {
+  display: none;
+}
+
+/* Kathmandu Post-like list */
+.kp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.kp-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-bottom: none;           /* remove this if present */
+}
+
+
+.kp-item-image img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+.kp-item-body {
+  flex: 1;
+}
+
+.kp-item-category {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #1f4e79;
+  margin-bottom: 0.15rem;
+}
+
+.kp-item-title {
+  font-size: 1.05rem;
+  margin: 0 0 0.2rem;
+}
+
+.kp-item-title a {
+  text-decoration: none;
+  color: #111827;
+}
+
+.kp-item-title a:hover {
+  text-decoration: underline;
+}
+
+.kp-item-meta {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin: 0 0 0.3rem;
+}
+
+.kp-item-excerpt {
+  font-size: 0.9rem;
+  color: #374151;
+  margin: 0;
+}
+
+/* Mobile: stack image above text */
+@media (max-width: 640px) {
+  .kp-item {
+    flex-direction: column;
+  }
+
+  .kp-item-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+
