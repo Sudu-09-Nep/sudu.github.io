@@ -26,10 +26,23 @@ body {
 .sidebar {
   flex: 0 0 260px; /* fixed-ish width sidebar */
 }
+/* Make author card hug the left and not too wide */
+.sidebar .card {
+  max-width: 260px;
+  margin: 0 0 1.5rem;
+}
+
+/* Tighten inner content a bit */
+.author__content,
+.author__urls-wrapper {
+  margin-top: 0.75rem;
+}
+
 .page {
   flex: 1;
   padding-top: 1rem;    /* start a bit below masthead */
 }
+
 
 /* Light overlay so header, sidebar, and content stay readable */
 .masthead,
@@ -327,6 +340,10 @@ body {
     height: auto;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 
 
