@@ -1,10 +1,17 @@
 /* Subtle DNA background */
-body {
+/* body {
   margin: 0;
   min-height: 100vh;
   background:
     linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
     url("/sudu.github.io/images/dna-hero.png") no-repeat center top fixed;
+  background-size: cover;
+}  */
+/* === Global reset & background === */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: url("/sudu.github.io/images/dna-hero.png") no-repeat center center fixed;
   background-size: cover;
 }
 /* Make content start near the top next to sidebar */
