@@ -227,6 +227,22 @@ body {
 .post .page__title {
   margin-bottom: 0.5rem;
 }
+/* Wide single-post layout */
+.post--wide .page {
+  flex: 1;
+}
+
+.post--wide .page__content {
+  max-width: 960px;              /* wider than normal */
+  margin: 0 auto 3rem;
+  padding: 2rem 2.5rem 3rem;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 0.75rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
 
 
 /* Kathmandu Post-like list */
@@ -240,9 +256,13 @@ body {
 .kp-item {
   display: flex;
   gap: 1rem;
-  border-bottom: 1px solid #e5e7eb;
-  padding-bottom: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-bottom: none;           /* remove this if present */
 }
+
 
 .kp-item-image img {
   width: 120px;
