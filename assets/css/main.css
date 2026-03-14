@@ -320,7 +320,10 @@ a:hover {
   color: #ffffff;
   text-decoration: underline;
 }
-
+/* Hide default page title when we use custom hero heading */
+.page__inner-wrap.has-section-hero > header.page__header {
+  display: none;
+}
 
 /* Kathmandu Post-like list */
 .kp-list {
