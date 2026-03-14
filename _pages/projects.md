@@ -5,16 +5,18 @@ permalink: /projects/
 author_profile: true
 ---
 
-Here are some of the projects and workflows I’m exploring as an undergraduate bioscience and biotechnology student.
-
 {% include base_path %}
+
+<div class="card">
+  Here are some of the projects and workflows I’m exploring as an undergraduate bioscience and biotechnology student.
+</div>
 
 <ul class="archive-projects">
   {% assign projects_collection = site.collections | where: "label", "projects" | first %}
   {% if projects_collection %}
     {% assign all_projects = projects_collection.docs | sort: "date" | reverse %}
     {% for project in all_projects %}
-      <li>
+      <li class="card">
         <h2><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
         {% if project.excerpt %}
           <p>{{ project.excerpt }}</p>
@@ -25,6 +27,6 @@ Here are some of the projects and workflows I’m exploring as an undergraduate 
       </li>
     {% endfor %}
   {% else %}
-    <li>No projects found yet.</li>
+    <li class="card">No projects found yet.</li>
   {% endif %}
 </ul>
