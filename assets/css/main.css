@@ -281,6 +281,47 @@ a:hover {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
+/* Generic white hero heading used on Blog, Projects, Portfolio, CV */
+.section-hero {
+  margin: 1.5rem 0 1.5rem;
+}
+
+.section-hero__title {
+  font-size: 2.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 0.5rem;
+}
+
+/* Optional filters/links under the title */
+.section-hero__filters {
+  font-size: 0.9rem;
+}
+
+.section-hero__label {
+  font-weight: 600;
+  margin-right: 0.75rem;
+  color: #f9fafb;
+}
+
+.section-hero__link {
+  margin-right: 0.75rem;
+  text-decoration: none;
+  color: #e5e7eb;
+}
+
+.section-hero__link.is-active {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.section-hero__link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+
 /* Kathmandu Post-like list */
 .kp-list {
   display: flex;
