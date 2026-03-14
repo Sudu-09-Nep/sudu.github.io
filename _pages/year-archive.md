@@ -8,22 +8,12 @@ author_profile: true
 
 {% include base_path %}
 
-<div class="blog-category-bar">
-  <span class="blog-category-label">Topics:</span>
-  <a href="{{ '/year-archive/' | relative_url }}" class="blog-category-link is-active">
-    All
-  </a>
-  <a href="{{ '/category/nature/' | relative_url }}" class="blog-category-link">
-    Nature
-  </a>
-  <a href="{{ '/category/reflection/' | relative_url }}" class="blog-category-link">
-    Reflection
-  </a>
-</div>
+Topics:  
+[All]({{ '/year-archive/' | relative_url }}) [Nature]({{ '/category/nature/' | relative_url }}) [Reflection]({{ '/category/reflection/' | relative_url }})
 
 <div class="kp-list">
-  {% assign posts = site.posts | sort: "date" | reverse %}
-  {% for post in posts %}
+{% assign posts = site.posts | sort: "date" | reverse %}
+{% for post in posts %}
   <article class="kp-item">
     {% if post.image %}
     <a class="kp-item-image" href="{{ post.url | relative_url }}">
@@ -49,5 +39,5 @@ author_profile: true
       {% endif %}
     </div>
   </article>
-  {% endfor %}
+{% endfor %}
 </div>
