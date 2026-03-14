@@ -150,6 +150,31 @@ body {
   background-color: rgba(255, 255, 255, 0.92);
   border-radius: 0.75rem;
 }
+.topics-bar {
+  margin: 0 0 1.5rem;
+  padding: 0.5rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.topics-label {
+  font-weight: 600;
+}
+
+.topics-bar a {
+  text-decoration: none;
+  color: #555;
+}
+
+.topics-bar a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
 /* Restore original-style avatar size and shape */
 .author__avatar img {
   width: 120px;
