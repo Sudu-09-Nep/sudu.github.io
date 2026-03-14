@@ -8,8 +8,12 @@ author_profile: true
 
 {% include base_path %}
 
-Topics:  
-[All]({{ '/year-archive/' | relative_url }}) [Nature]({{ '/category/nature/' | relative_url }}) [Reflection]({{ '/category/reflection/' | relative_url }})
+<div class="topics-bar">
+  <span class="topics-label">Topics:</span>
+  <a href="{{ '/year-archive/' | relative_url }}">All</a>
+  <a href="{{ '/category/nature/' | relative_url }}">Nature</a>
+  <a href="{{ '/category/reflection/' | relative_url }}">Reflection</a>
+</div>
 
 <div class="kp-list">
 {% assign posts = site.posts | sort: "date" | reverse %}
