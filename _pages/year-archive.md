@@ -4,6 +4,7 @@ layout: archive
 permalink: /year-archive/
 show_excerpts: false
 author_profile: true
+classes: has-section-hero
 ---
 
 {% include base_path %}
