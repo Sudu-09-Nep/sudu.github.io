@@ -8,22 +8,29 @@ author_profile: true
 
 {% include base_path %}
 
-<div class="topics-bar">
-  <span class="topics-label">Topics:</span>
-  <a href="{{ '/year-archive/' | relative_url }}">All</a>
-  <a href="{{ '/category/nature/' | relative_url }}">Nature</a>
-  <a href="{{ '/category/reflection/' | relative_url }}">Reflection</a>
+<div class="blog-category-bar">
+  <span class="blog-category-label">Topics:</span>
+  <a href="{{ '/year-archive/' | relative_url }}" class="blog-category-link is-active">
+    All
+  </a>
+  <a href="{{ '/category/nature/' | relative_url }}" class="blog-category-link">
+    Nature
+  </a>
+  <a href="{{ '/category/reflection/' | relative_url }}" class="blog-category-link">
+    Reflection
+  </a>
 </div>
 
-<div class="kp-list">
 {% assign posts = site.posts | sort: "date" | reverse %}
+
+<div class="kp-list">
 {% for post in posts %}
   <article class="kp-item">
-    {% if post.image %}
     <a class="kp-item-image" href="{{ post.url | relative_url }}">
-      <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+      {% if post.header.teaser %}
+      <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}">
+      {% endif %}
     </a>
-    {% endif %}
     <div class="kp-item-body">
       {% if post.categories and post.categories.size > 0 %}
       <div class="kp-item-category">
