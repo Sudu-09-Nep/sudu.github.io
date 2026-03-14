@@ -181,6 +181,21 @@ body {
   font-weight: 700;
   color: #1f4e79;
 }
+/* Make single blog posts comfortable to read */
+.post {
+  max-width: 800px;
+  margin: 0 0 3rem;
+}
+
+.post .page__content {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.post .page__title {
+  margin-bottom: 0.5rem;
+}
+
 
 /* Kathmandu Post-like list */
 .kp-list {
