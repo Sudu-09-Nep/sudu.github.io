@@ -1,22 +1,11 @@
-/* Subtle DNA background */
-/* body {
-  margin: 0;
-  min-height: 100vh;
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-    url("/sudu.github.io/images/dna-hero.png") no-repeat center top fixed;
-  background-size: cover;
-}  */
-/* === Global reset & background === */
+/* === Global background and base text === */
+
 body {
   margin: 0;
   min-height: 100vh;
   background: url("/sudu.github.io/images/dna-hero.png") no-repeat center center fixed;
   background-size: cover;
-}
-/* Global text and link colors */
-body {
-  color: #1f2933;  /* dark slate instead of black */
+  color: #1f2933; /* dark slate instead of pure black */
 }
 
 .page__content {
@@ -31,8 +20,13 @@ a:hover {
   color: #0b3b63;
 }
 
-/* Make content start near the top next to sidebar */
-/* Two-column layout: sidebar left, content right */
+/* Smooth scroll for anchors */
+html {
+  scroll-behavior: smooth;
+}
+
+/* === Layout: sidebar + content === */
+
 #main {
   max-width: 1100px;
   margin: 0 auto;
@@ -40,16 +34,17 @@ a:hover {
   display: flex;
   gap: 4rem;
 }
+
 .sidebar {
-  flex: 0 0 260px; /* fixed-ish width sidebar */
+  flex: 0 0 260px;
 }
-/* Make author card hug the left and not too wide */
+
+/* Sidebar author card */
 .sidebar .card {
   max-width: 260px;
   margin: 0 0 1.5rem;
 }
 
-/* Tighten inner content a bit */
 .author__content,
 .author__urls-wrapper {
   margin-top: 0.75rem;
@@ -57,18 +52,18 @@ a:hover {
 
 .page {
   flex: 1;
-  padding-top: 1rem;    /* start a bit below masthead */
+  padding-top: 1rem;
 }
 
-
-/* Light overlay so header, sidebar, and content stay readable */
+/* Light overlay so header, content, and footer stay readable */
 .masthead,
 .page,
 .page__footer {
   background-color: rgba(255, 255, 255, 0.88);
 }
 
-/* === Top horizontal navigation === */
+/* === Top navigation === */
+
 .masthead {
   border-bottom: 1px solid #ddd;
   background: rgba(255, 255, 255, 0.9);
@@ -92,7 +87,6 @@ a:hover {
   margin-right: 2rem;
 }
 
-/* This makes the nav horizontal */
 .greedy-nav ul {
   display: flex;
   gap: 1.5rem;
@@ -118,7 +112,8 @@ a:hover {
   color: #1f4e79;
 }
 
-/* === Hero section === */
+/* === Landing hero (home page) === */
+
 .hero-landing {
   position: relative;
   min-height: 55vh;
@@ -177,7 +172,8 @@ a:hover {
   border-color: #111827;
 }
 
-/* === Main content card === */
+/* === Main content card (generic) === */
+
 .page__content {
   max-width: 780px;
   padding: 1.5rem 2rem 2.5rem;
@@ -187,91 +183,8 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.92);
   border-radius: 0.75rem;
 }
-.topics-bar {
-  margin: 0 0 1.5rem;
-  padding: 0.5rem 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
-  font-size: 0.95rem;
-}
 
-.topics-label {
-  font-weight: 600;
-}
-
-.topics-bar a {
-  text-decoration: none;
-  color: #555;
-}
-
-.topics-bar a:hover {
-  color: #000;
-  text-decoration: underline;
-}
-
-/* Restore original-style avatar size and shape */
-.author__avatar img {
-  width: 120px;
-  height: 120px;
-  max-width: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-}
-/* Category bar above blog list */
-.blog-category-bar {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: 0.85rem;
-}
-
-.blog-category-label {
-  font-weight: 600;
-  margin-right: 0.5rem;
-}
-
-.blog-category-link {
-  margin-right: 0.75rem;
-  text-decoration: none;
-  color: #4b5563;
-}
-
-.blog-category-link.is-active {
-  font-weight: 700;
-  color: #1f4e79;
-}
-/* Make single blog posts comfortable to read */
-.post {
-  max-width: 800px;
-  margin: 0 0 3rem;
-}
-
-.post .page__content {
-  font-size: 1rem;
-  line-height: 1.8;
-}
-
-.post .page__title {
-  margin-bottom: 0.5rem;
-}
-/* Wide single-post layout */
-.post--wide .page {
-  flex: 1;
-}
-
-.post--wide .page__content {
-  max-width: 960px;              /* wider than normal */
-  margin: 0 auto 3rem;
-  padding: 2rem 2.5rem 3rem;
-  background: rgba(255, 255, 255, 0.96);
-  border-radius: 0.75rem;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-  font-size: 1rem;
-  line-height: 1.8;
-}
+/* Reusable generic card (bio, intro, etc.) */
 .card {
   max-width: 900px;
   padding: 1.5rem 2rem;
@@ -281,7 +194,8 @@ a:hover {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-/* Generic white hero heading used on Blog, Projects, Portfolio, CV */
+/* === Big white section titles (Blog, Projects, Portfolio, CV) === */
+
 .section-hero {
   margin: 1.5rem 0 1.5rem;
 }
@@ -294,7 +208,7 @@ a:hover {
   margin: 0 0 0.5rem;
 }
 
-/* Optional filters/links under the title */
+/* Optional filters/links under the title (Topics, etc.) */
 .section-hero__filters {
   font-size: 0.9rem;
 }
@@ -320,12 +234,57 @@ a:hover {
   color: #ffffff;
   text-decoration: underline;
 }
-/* Hide default page title when we use custom hero heading */
-.page__inner-wrap.has-section-hero > header.page__header {
+
+/* Hide default black page title on pages using custom hero */
+.has-section-hero .page__header {
   display: none;
 }
 
-/* Kathmandu Post-like list */
+/* === Avatar === */
+
+.author__avatar img {
+  width: 120px;
+  height: 120px;
+  max-width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+/* === Single blog posts: wide and readable === */
+
+.post {
+  max-width: 800px;
+  margin: 0 0 3rem;
+}
+
+.post .page__content {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.post .page__title {
+  margin-bottom: 0.5rem;
+}
+
+/* Wide single-post layout for posts with classes: post--wide */
+.post--wide .page {
+  flex: 1;
+}
+
+.post--wide .page__content {
+  max-width: 960px;
+  margin: 0 auto 3rem;
+  padding: 2rem 2.5rem 3rem;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 0.75rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* === Uniform card list (Blog, Projects, Portfolio) === */
+
 .kp-list {
   display: flex;
   flex-direction: column;
@@ -340,9 +299,7 @@ a:hover {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 0.75rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  border-bottom: none;           /* remove this if present */
 }
-
 
 .kp-item-image img {
   width: 120px;
@@ -390,7 +347,17 @@ a:hover {
   margin: 0;
 }
 
-/* Mobile: stack image above text */
+/* Hover micro‑interaction */
+.kp-item {
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.kp-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.14);
+}
+
+/* Mobile: stack card image above text */
 @media (max-width: 640px) {
   .kp-item {
     flex-direction: column;
@@ -401,10 +368,3 @@ a:hover {
     height: auto;
   }
 }
-html {
-  scroll-behavior: smooth;
-}
-
-
-
-
