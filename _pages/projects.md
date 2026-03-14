@@ -3,6 +3,7 @@ layout: archive
 title: "Projects"
 permalink: /projects/
 author_profile: true
+classes: has-section-hero
 ---
 
 {% include base_path %}
