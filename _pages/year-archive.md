@@ -8,17 +8,21 @@ author_profile: true
 
 {% include base_path %}
 
-<div class="blog-category-bar">
-  <span class="blog-category-label">Topics:</span>
-  <a href="{{ '/year-archive/' | relative_url }}" class="blog-category-link is-active">
-    All
-  </a>
-  <a href="{{ '/category/nature/' | relative_url }}" class="blog-category-link">
-    Nature
-  </a>
-  <a href="{{ '/category/reflection/' | relative_url }}" class="blog-category-link">
-    Reflection
-  </a>
+<div class="section-hero">
+  <h1 class="section-hero__title">Blog posts</h1>
+
+  <div class="section-hero__filters">
+    <span class="section-hero__label">Topics:</span>
+    <a href="{{ '/year-archive/' | relative_url }}" class="section-hero__link is-active">
+      All
+    </a>
+    <a href="{{ '/category/nature/' | relative_url }}" class="section-hero__link">
+      Nature
+    </a>
+    <a href="{{ '/category/reflection/' | relative_url }}" class="section-hero__link">
+      Reflection
+    </a>
+  </div>
 </div>
 
 {% assign posts = site.posts | sort: "date" | reverse %}
