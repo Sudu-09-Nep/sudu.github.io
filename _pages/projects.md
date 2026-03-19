@@ -3,21 +3,13 @@ layout: archive
 title: "Projects"
 permalink: /projects/
 author_profile: true
-classes: has-section-hero
+classes: has-section-hero projects-page
 ---
 
 {% include base_path %}
 
 <div class="section-hero">
   <h1 class="section-hero__title">Projects</h1>
-
-  <div class="section-hero__filters">
-    <span class="section-hero__label">Topics:</span>
-    <a href="{{ '/projects/' | relative_url }}" class="section-hero__link is-active">
-      All
-    </a>
-    {# optional future filters, similar to year-archive #}
-  </div>
 </div>
 
 {% assign projects_collection = site.collections | where: "label", "projects" | first %}
