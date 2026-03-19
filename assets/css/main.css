@@ -368,3 +368,7 @@ html {
     height: auto;
   }
 }
+/* Hide the default black page title on the blog archive page */
+.page-year-archive .page-title {
+  display: none;
+}
