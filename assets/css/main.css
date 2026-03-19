@@ -417,4 +417,17 @@ html {
   display: none !important;
 }
 
+/* Hide Minimal Mistakes / AcademicPages related-posts block globally */
+.page__related,
+.page__related-title,
+.related-posts,
+.you-may-also-enjoy {
+  display: none !important;
+}
+
+/* If it's in tiles or list form */
+.tiles--related,
+.related {
+  display: none !important;
+}
 
