@@ -163,7 +163,8 @@ navigation:
   - title: "Portfolio"
     url  : /portfolio/
   - title: "CV"
-    url  : /cv-json/
+    url  : https://sudu-09-nep.github.io/sudu.github.io/files/Sudarshan_Resume.pdf
+
 
 # Defaults
 defaults:
