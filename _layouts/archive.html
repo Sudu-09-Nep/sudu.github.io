@@ -13,15 +13,13 @@ layout: default
 {% endif %}
 
 <div id="main" role="main">
-  {% unless page.no_sidebar %}
-    {% if page.author_profile %}
-      <aside class="sidebar">
-        {% include author-profile.html %}
-      </aside>
-    {% else %}
-      {% include sidebar.html %}
-    {% endif %}
-  {% endunless %}
+  {% if page.author_profile %}
+    <aside class="sidebar">
+      {% include author-profile.html %}
+    </aside>
+  {% else %}
+    {% include sidebar.html %}
+  {% endif %}
 
   <div class="archive">
     {% unless page.header.overlay_color or page.header.overlay_image %}
