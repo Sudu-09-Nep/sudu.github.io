@@ -404,9 +404,16 @@ html {
 .section-hero__title {
   color: #d4af37 !important; /* classic gold */
 }
-/* Completely hide "You May Also Enjoy" / related posts on all single pages */
-.layout--single .page__related,
-.layout--single .related {
+/* Hide "You May Also Enjoy" in the RIGHT SIDEBAR only */
+.sidebar .you-may-also-enjoy,
+.sidebar h3:contains("You May Also Enjoy"),
+.sidebar h2:contains("You May Also Enjoy") {
+  display: none !important;
+}
+
+/* Safety: if it's wrapped in a generic widget container */
+.sidebar .page__related,
+.sidebar .related-posts {
   display: none !important;
 }
 
