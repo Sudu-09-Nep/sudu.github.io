@@ -368,15 +368,15 @@ html {
     height: auto;
   }
 }
-/* Hide the default black big title on all archive pages */
-.archive .page__title {
-  display: none;
-}
 /* Hide the black layout title only on these three pages */
 .year-archive-page .page__title,
 .projects-page .page__title,
 .portfolio-page .page__title {
   display: none;
+}
+/* Make hero section titles golden */
+.section-hero__title {
+  color: #d4af37; /* classic gold */
 }
 
 
