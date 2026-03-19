@@ -372,4 +372,11 @@ html {
 .archive .page__title {
   display: none;
 }
+/* Hide the black layout title only on these three pages */
+.year-archive-page .page__title,
+.projects-page .page__title,
+.portfolio-page .page__title {
+  display: none;
+}
+
 
