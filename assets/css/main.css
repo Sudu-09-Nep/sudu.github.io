@@ -250,13 +250,14 @@ html {
   object-fit: cover;
   display: block;
 }
-/* 1) Standardize hero / header images on all posts & portfolio items */
+/* HERO / HEADER IMAGE: keep it responsive, but not too tall */
 .page__hero-image,
 .page__hero--overlay .page__hero-image {
   width: 100%;
   max-width: 100%;
-  height: 320px;          /* tweak: 260–380px based on your taste */
-  object-fit: cover;      /* uniform crop while preserving aspect ratio */
+  max-height: 260px;     /* was fixed height; now a max-height */
+  height: auto;          /* keeps natural aspect until it hits max-height */
+  object-fit: cover;
   object-position: center;
   display: block;
   margin-left: auto;
@@ -264,13 +265,16 @@ html {
 }
 
 /* 2) Any image inside post/portfolio content should never overflow */
+/* CONTENT IMAGES: centered, but not giant */
 .page__content img {
-  max-width: 100%;
+  max-width: 700px;      /* choose 600–800px depending on taste */
+  width: 100%;           /* responsive downwards on small screens */
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
 /* 3) Widen the reading column for all single pages (posts, portfolio, etc.) */
 /* Alternative: almost full-width reading view */
 .layout--single .page {
