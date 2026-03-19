@@ -204,7 +204,7 @@ html {
   font-size: 2.6rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #d4af37;
   margin: 0 0 0.5rem;
 }
 
@@ -368,6 +368,12 @@ html {
     height: auto;
   }
 }
+
+/* Hide the default black big title on all archive pages */
+.archive .page__title {
+  display: none;
+}
+
 /* Hide the black layout title only on these three pages */
 .year-archive-page .page__title,
 .projects-page .page__title,
