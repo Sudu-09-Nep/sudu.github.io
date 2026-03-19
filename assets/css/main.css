@@ -376,7 +376,7 @@ html {
 }
 /* Make hero section titles golden */
 .section-hero__title {
-  color: #d4af37; /* classic gold */
+  color: #d4af37 !important; /* classic gold */
 }
 
 
