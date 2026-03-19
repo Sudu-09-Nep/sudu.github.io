@@ -8,26 +8,53 @@ classes: has-section-hero
 
 {% include base_path %}
 
-<div class="card">
-  Here are some of the projects and workflows I’m exploring as an undergraduate bioscience and biotechnology student.
+<div class="section-hero">
+  <h1 class="section-hero__title">Projects</h1>
+
+  <div class="section-hero__filters">
+    <span class="section-hero__label">Topics:</span>
+    <a href="{{ '/projects/' | relative_url }}" class="section-hero__link is-active">
+      All
+    </a>
+    {# optional future filters, similar to year-archive #}
+  </div>
 </div>
 
-<ul class="archive-projects">
-  {% assign projects_collection = site.collections | where: "label", "projects" | first %}
-  {% if projects_collection %}
-    {% assign all_projects = projects_collection.docs | sort: "date" | reverse %}
-    {% for project in all_projects %}
-      <li class="card">
-        <h2><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
+{% assign projects_collection = site.collections | where: "label", "projects" | first %}
+{% if projects_collection %}
+  {% assign all_projects = projects_collection.docs | sort: "date" | reverse %}
+
+  <div class="kp-list">
+  {% for project in all_projects %}
+    <article class="kp-item">
+      <a class="kp-item-image" href="{{ project.url | relative_url }}">
+        {% if project.header.teaser %}
+        <img src="{{ project.header.teaser | relative_url }}" alt="{{ project.title }}">
+        {% endif %}
+      </a>
+      <div class="kp-item-body">
+        {% if project.categories and project.categories.size > 0 %}
+        <div class="kp-item-category">
+          {{ project.categories | join: " / " }}
+        </div>
+        {% endif %}
+        <h2 class="kp-item-title">
+          <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+        </h2>
+        <p class="kp-item-meta">
+          {% if project.date %}
+          {{ project.date | date: "%B %d, %Y" }}
+          {% endif %}
+        </p>
         {% if project.excerpt %}
-          <p>{{ project.excerpt }}</p>
+        <p class="kp-item-excerpt">
+          {{ project.excerpt | strip_newlines | strip_html | truncate: 160 }}
+        </p>
         {% endif %}
-        {% if project.date %}
-          <p><small>{{ project.date | date: "%B %d, %Y" }}</small></p>
-        {% endif %}
-      </li>
-    {% endfor %}
-  {% else %}
-    <li class="card">No projects found yet.</li>
-  {% endif %}
-</ul>
+      </div>
+    </article>
+  {% endfor %}
+  </div>
+{% else %}
+  <p>No projects found yet.</p>
+{% endif %}
