@@ -404,5 +404,10 @@ html {
 .section-hero__title {
   color: #d4af37 !important; /* classic gold */
 }
+/* Completely hide "You May Also Enjoy" / related posts on all single pages */
+.layout--single .page__related,
+.layout--single .related {
+  display: none !important;
+}
 
 
