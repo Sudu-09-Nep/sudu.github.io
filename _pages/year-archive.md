@@ -5,6 +5,7 @@ permalink: /year-archive/
 show_excerpts: false
 author_profile: true
 classes: has-section-hero
+no_sidebar: true
 ---
 
 {% include base_path %}
