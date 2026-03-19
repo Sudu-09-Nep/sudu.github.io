@@ -47,7 +47,7 @@ These complications demonstrate that diabetes is not only a metabolic disorder â
 
 ### Team Behind the Poster
 
-![Poster Team](/images/portfolio/heart-day/team.jpg)
+<!--![Poster Team](/images/portfolio/heart-day/team.-->
 
 This project was developed and presented in collaboration with:
 
