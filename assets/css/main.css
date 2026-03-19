@@ -272,9 +272,14 @@ html {
   margin-right: auto;
 }
 /* 3) Widen the reading column for all single pages (posts, portfolio, etc.) */
+/* Alternative: almost full-width reading view */
 .layout--single .page {
-  max-width: 980px;   /* increase if you want an even broader column */
+  max-width: none;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
+
 
 /* Use more space on large screens */
 @media (min-width: 1200px) {
