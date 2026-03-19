@@ -15,7 +15,7 @@ The project aimed to communicate an urgent public health reality: **diabetes is 
 
 ### Poster Presentation
 
-![Poster Presentation](/images/portfolio/poster_sudu.jpeg)
+![Poster Presentation]({{ "/images/portfolio/poster_sudu.jpeg"| relative_url }})
 
 Our poster used visual storytelling and data-driven infographics to explain how prolonged high blood glucose gradually damages the vascular system and increases the risk of severe cardiovascular complications.
 
