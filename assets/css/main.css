@@ -368,11 +368,8 @@ html {
     height: auto;
   }
 }
-/* Hide the default black page title on the blog archive page */
-.page-year-archive .page-title {
-  display: none;
-}
-/* Hide the default black big title on archive-style pages */
+/* Hide the default black big title on all archive pages */
 .archive .page__title {
   display: none;
 }
+
