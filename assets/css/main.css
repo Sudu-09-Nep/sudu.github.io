@@ -282,6 +282,26 @@ html {
   font-size: 1rem;
   line-height: 1.8;
 }
+/* Standardize post header images */
+.page__hero--overlay .page__hero-image,
+.page__hero-image {
+  width: 100%;
+  height: 300px;          /* choose the height you like: 250–400px works well */
+  object-fit: cover;      /* keeps aspect ratio, crops nicely */
+  object-position: center;
+}
+/* Widen single post content area */
+.layout--single .page {
+  max-width: 980px;   /* default is narrower; increase as you prefer */
+}
+
+/* Optional: make it almost full screen on large displays */
+@media (min-width: 1200px) {
+  .layout--single .page {
+    max-width: 1100px;
+  }
+}
+
 
 /* === Uniform card list (Blog, Projects, Portfolio) === */
 
