@@ -372,3 +372,7 @@ html {
 .page-year-archive .page-title {
   display: none;
 }
+/* Hide the default black big title on archive-style pages */
+.archive .page__title {
+  display: none;
+}
