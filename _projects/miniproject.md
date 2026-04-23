@@ -25,5 +25,5 @@ Key Results:
 Full Report: [Download Full Report (PDF)](/files/Brucella_report.pdf)
 
 Repository: 
-- https://github.com/Sudu-09-Nep/ont-illumina-hybrid-assembly
+- _https://github.com/Sudu-09-Nep/ont-illumina-hybrid-assembly
 - https://github.com/Sudu-09-Nep/Brucella_phylo
