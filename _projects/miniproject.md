@@ -23,7 +23,7 @@ Key Results:
 - Protein-Coding Genes Identified: 5,325
 
 
-Full Report: [Download Full Report (PDF)](/sudu.github.io/files/Brucella_report.pdf)
+Full Report: [Download Full Report (PDF)](https://sudu-09-nep.github.io/sudu.github.io/files/Brucella_report.pdf)
 
 
 Repository: 
