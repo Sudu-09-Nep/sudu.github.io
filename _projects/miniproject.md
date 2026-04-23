@@ -22,7 +22,9 @@ Key Results:
 - BUSCO Completeness: 99.5%
 - Protein-Coding Genes Identified: 5,325
 
-Full Report: [Download Full Report (PDF)](/files/Brucella_report.pdf)
+
+Full Report: [Download Full Report (PDF)](/sudu.github.io/files/Brucella_report.pdf)
+
 
 Repository: 
 - _https://github.com/Sudu-09-Nep/ont-illumina-hybrid-assembly
