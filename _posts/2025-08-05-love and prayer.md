@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: 'Love itself is a prayer'
 date: 2025-08-05
 categories: reflection

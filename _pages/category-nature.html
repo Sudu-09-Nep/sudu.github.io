@@ -1,46 +1,47 @@
 ---
-title: "Nature"
-layout: archive
+layout: default
+title: "Nature Posts"
 permalink: /category/nature/
-show_excerpts: true
 ---
 
-{% include base_path %}
-
-<div class="blog-category-bar">
-  <span class="blog-category-label">Topics:</span>
-  <a href="{{ '/year-archive/' | relative_url }}" class="blog-category-link">
-    All
-  </a>
-  <a href="{{ '/category/nature/' | relative_url }}" class="blog-category-link is-active">
-    Nature
-  </a>
-  <a href="{{ '/category/reflection/' | relative_url }}" class="blog-category-link">
-    Reflection
-  </a>
+<div class="page-hero">
+  <h1>Nature</h1>
+  <p>Stories about the natural world, wildlife, and our place within it.</p>
+  <div class="filter-tabs">
+    <a href="{{ '/year-archive/' | relative_url }}" class="filter-tab">All</a>
+    <a href="{{ '/category/nature/' | relative_url }}" class="filter-tab active">Nature</a>
+    <a href="{{ '/category/reflection/' | relative_url }}" class="filter-tab">Reflection</a>
+  </div>
 </div>
 
-<div class="kp-list">
-  {% for post in site.categories.nature %}
-  <article class="kp-item">
-    <a class="kp-item-image" href="{{ post.url | relative_url }}">
-      {% if post.header.teaser %}
-      <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}">
+<section class="section" style="padding-top: 40px;">
+  <div class="blog-cards-grid">
+    {% assign posts = site.posts | sort: "date" | reverse %}
+    {% for post in posts %}
+      {% if post.categories contains "nature" %}
+        <a href="{{ post.url | relative_url }}" class="blog-card-v reveal">
+          {% if post.header.teaser %}
+            <img class="card-img" src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}" loading="lazy">
+          {% else %}
+            <div class="card-img" style="background: linear-gradient(135deg, var(--accent-glow), var(--bg-subtle)); display:flex; align-items:center; justify-content:center;">
+              <i class="fa-solid fa-leaf" style="font-size:2rem; color:var(--accent-light); opacity:0.4;"></i>
+            </div>
+          {% endif %}
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="cat">nature</span>
+              <span><i class="fa-regular fa-calendar"></i> {{ post.date | date: "%b %d, %Y" }}</span>
+              {% assign words = post.content | number_of_words %}
+              {% assign rt = words | divided_by: 160 %}
+              {% if rt < 1 %}{% assign rt = 1 %}{% endif %}
+              <span><i class="fa-regular fa-clock"></i> {{ rt }} min</span>
+            </div>
+            <h3>{{ post.title }}</h3>
+            <p class="excerpt">{{ post.excerpt | strip_html | truncate: 180 }}</p>
+          </div>
+        </a>
       {% endif %}
-    </a>
-    <div class="kp-item-body">
-      <h2 class="kp-item-title">
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </h2>
-      <p class="kp-item-meta">
-        {{ post.date | date: "%B %d, %Y" }}
-      </p>
-      {% if post.excerpt %}
-      <p class="kp-item-excerpt">
-        {{ post.excerpt | strip_newlines | truncate: 160 }}
-      </p>
-      {% endif %}
-    </div>
-  </article>
-  {% endfor %}
-</div>
+    {% endfor %}
+  </div>
+</section>
+

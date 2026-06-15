@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: "The Last One"
 date: 2025-09-23
 categories: nature

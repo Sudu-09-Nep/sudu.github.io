@@ -1,53 +1,38 @@
 ---
-layout: archive
+layout: default
 title: "Portfolio"
 permalink: /portfolio/
-author_profile: true
-classes: has-section-hero
 ---
 
-{% include base_path %}
-
-<div class="section-hero">
-  <h1 class="section-hero__title">Portfolio</h1>
+<div class="page-hero">
+  <h1>Portfolio</h1>
+  <p>Conferences, workshops, presentations, and hands-on training in bioscience and biotechnology.</p>
 </div>
 
-{% assign portfolio_collection = site.collections | where: "label", "portfolio" | first %}
-
-{% if portfolio_collection %}
-  {% assign all_items = portfolio_collection.docs | sort: "date" | reverse %}
-
-  <div class="kp-list">
-  {% for item in all_items %}
-    <article class="kp-item">
-      <a class="kp-item-image" href="{{ item.url | relative_url }}">
-        {% if item.header.teaser %}
-        <img src="{{ item.header.teaser | relative_url }}" alt="{{ item.title }}">
-        {% endif %}
-      </a>
-      <div class="kp-item-body">
-        {% if item.categories and item.categories.size > 0 %}
-        <div class="kp-item-category">
-          {{ item.categories | join: " / " }}
-        </div>
-        {% endif %}
-        <h2 class="kp-item-title">
-          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-        </h2>
-        <p class="kp-item-meta">
-          {% if item.date %}
-          {{ item.date | date: "%B %d, %Y" }}
+<section class="section" style="padding-top: 40px;">
+  {% assign portfolio_collection = site.collections | where: "label", "portfolio" | first %}
+  {% if portfolio_collection %}
+    {% assign all_items = portfolio_collection.docs | sort: "date" | reverse %}
+    <div class="portfolio-grid">
+      {% for item in all_items %}
+        <a href="{{ item.url | relative_url }}" class="portfolio-card reveal">
+          <p class="port-date"><i class="fa-regular fa-calendar"></i> {{ item.date | date: "%B %d, %Y" }}</p>
+          <h3>{{ item.title }}</h3>
+          {% if item.excerpt %}
+            <p class="port-excerpt">{{ item.excerpt | strip_html | truncate: 180 }}</p>
           {% endif %}
-        </p>
-        {% if item.excerpt %}
-        <p class="kp-item-excerpt">
-          {{ item.excerpt | strip_newlines | strip_html | truncate: 160 }}
-        </p>
-        {% endif %}
-      </div>
-    </article>
-  {% endfor %}
-  </div>
-{% else %}
-  <p>No portfolio items found yet.</p>
-{% endif %}
+          {% if item.tags and item.tags.size > 0 %}
+            <div class="port-tags">
+              {% for tag in item.tags %}
+                <span class="tool-tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </a>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p style="color: var(--text-light); text-align: center;">No portfolio items found yet.</p>
+  {% endif %}
+</section>
+

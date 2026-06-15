@@ -1,60 +1,47 @@
 ---
-title: "Blog posts"
-layout: archive
+title: "Blog"
+layout: default
 permalink: /year-archive/
-show_excerpts: false
-author_profile: true
-classes: has-section-hero
-no_sidebar: true
 ---
 
-{% include base_path %}
-
-<div class="section-hero">
-  <h1 class="section-hero__title">Blog posts</h1>
-
-  <div class="section-hero__filters">
-    <span class="section-hero__label">Topics:</span>
-    <a href="{{ '/year-archive/' | relative_url }}" class="section-hero__link is-active">
-      All
-    </a>
-    <a href="{{ '/category/nature/' | relative_url }}" class="section-hero__link">
-      Nature
-    </a>
-    <a href="{{ '/category/reflection/' | relative_url }}" class="section-hero__link">
-      Reflection
-    </a>
+<div class="page-hero">
+  <h1>Blog</h1>
+  <p>Reflections on nature, life, science, and things that don't have clear answers yet.</p>
+  <div class="filter-tabs">
+    <a href="{{ '/year-archive/' | relative_url }}" class="filter-tab active">All</a>
+    <a href="{{ '/category/nature/' | relative_url }}" class="filter-tab">Nature</a>
+    <a href="{{ '/category/reflection/' | relative_url }}" class="filter-tab">Reflection</a>
   </div>
 </div>
 
-{% assign posts = site.posts | sort: "date" | reverse %}
+<section class="section" style="padding-top: 40px;">
+  <div class="blog-cards-grid">
+    {% assign posts = site.posts | sort: "date" | reverse %}
+    {% for post in posts %}
+      <a href="{{ post.url | relative_url }}" class="blog-card-v reveal">
+        {% if post.header.teaser %}
+          <img class="card-img" src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}" loading="lazy">
+        {% else %}
+          <div class="card-img" style="background: linear-gradient(135deg, var(--accent-glow), var(--bg-subtle)); display:flex; align-items:center; justify-content:center;">
+            <i class="fa-solid fa-pen-nib" style="font-size:2rem; color:var(--accent-light); opacity:0.4;"></i>
+          </div>
+        {% endif %}
+        <div class="card-body">
+          <div class="card-meta">
+            {% if post.categories.size > 0 %}
+              <span class="cat">{{ post.categories | first }}</span>
+            {% endif %}
+            <span><i class="fa-regular fa-calendar"></i> {{ post.date | date: "%b %d, %Y" }}</span>
+            {% assign words = post.content | number_of_words %}
+            {% assign rt = words | divided_by: 160 %}
+            {% if rt < 1 %}{% assign rt = 1 %}{% endif %}
+            <span><i class="fa-regular fa-clock"></i> {{ rt }} min</span>
+          </div>
+          <h3>{{ post.title }}</h3>
+          <p class="excerpt">{{ post.excerpt | strip_html | truncate: 180 }}</p>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</section>
 
-<div class="kp-list">
-{% for post in posts %}
-  <article class="kp-item">
-    <a class="kp-item-image" href="{{ post.url | relative_url }}">
-      {% if post.header.teaser %}
-      <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}">
-      {% endif %}
-    </a>
-    <div class="kp-item-body">
-      {% if post.categories and post.categories.size > 0 %}
-      <div class="kp-item-category">
-        {{ post.categories | join: " / " }}
-      </div>
-      {% endif %}
-      <h2 class="kp-item-title">
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </h2>
-      <p class="kp-item-meta">
-        {{ post.date | date: "%B %d, %Y" }}
-      </p>
-      {% if post.excerpt %}
-      <p class="kp-item-excerpt">
-        {{ post.excerpt | strip_newlines | strip_html | truncate: 160 }}
-      </p>
-      {% endif %}
-    </div>
-  </article>
-{% endfor %}
-</div>

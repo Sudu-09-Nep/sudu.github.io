@@ -1,16 +1,13 @@
 main:
-  - title: "About"
+  - title: "Home"
     url: /
-
+  - title: "About"
+    url: /#about
   - title: "Projects"
     url: /projects/
-
-  - title: "Blog Posts"
+  - title: "Blog"
     url: /year-archive/
-
   - title: "Portfolio"
     url: /portfolio/
-
-  - title: "CV"
-    url: https://sudu-09-nep.github.io/sudu.github.io/files/Sudarshan_Resume.pdf
-
+  - title: "Contact"
+    url: /#contact
