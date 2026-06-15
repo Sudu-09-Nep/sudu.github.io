@@ -3,6 +3,7 @@ main:
     url: /
   - title: "About"
     url: /#about
+    hash: "#about"
   - title: "Projects"
     url: /projects/
   - title: "Blog"
@@ -11,3 +12,4 @@ main:
     url: /portfolio/
   - title: "Contact"
     url: /#contact
+    hash: "#contact"

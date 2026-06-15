@@ -3,10 +3,10 @@
     <a href="{{ '/' | relative_url }}" class="nav-logo">Sudu<span>.</span></a>
     <ul class="nav-links">
       {% for item in site.data.navigation.main %}
-        {% if item.title == "Contact" or item.title == "About" %}
-          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+        {% if item.url contains "#" %}
+          <li><a href="{{ '/' | relative_url }}{{ item.hash }}" {% if page.url == item.url %}class="active"{% endif %}>{{ item.title }}</a></li>
         {% else %}
-          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          <li><a href="{{ item.url | relative_url }}" {% if page.url == item.url %}class="active"{% endif %}>{{ item.title }}</a></li>
         {% endif %}
       {% endfor %}
       <li><a href="{{ site.baseurl }}/files/Sudarshan_Resume.pdf" class="nav-cta" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-down"></i> CV</a></li>
@@ -18,7 +18,11 @@
 </nav>
 <div class="mobile-menu" id="mobileMenu">
   {% for item in site.data.navigation.main %}
-    <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+    {% if item.url contains "#" %}
+      <a href="{{ '/' | relative_url }}{{ item.hash }}">{{ item.title }}</a>
+    {% else %}
+      <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+    {% endif %}
   {% endfor %}
   <a href="{{ site.baseurl }}/files/Sudarshan_Resume.pdf" target="_blank" rel="noopener">Download CV</a>
 </div>
