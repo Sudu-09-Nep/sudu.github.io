@@ -16,7 +16,7 @@ redirect_from:
     </div>
     <h1>Hi, I'm <span class="accent">Sudarshan</span></h1>
     <p class="hero-tagline">
-      I'm a researcher who also writes about science, nature, and the questions that keep me curious. My work focuses on genomics, bioinformatics, and making complex biology accessible.
+      I'm an undergrad student who  writes about science, nature, and the questions that keep me curious. My work focuses on genomics, bioinformatics, and making complex biology accessible.
     </p>
     <div class="hero-actions">
       <a href="{{ '/projects/' | relative_url }}" class="btn btn-primary">
@@ -59,13 +59,13 @@ redirect_from:
     <div class="about-grid">
       <div class="about-text reveal reveal-delay-1">
         <p>
-          I'm <strong>Sudarshan Aryal</strong>, an undergraduate in Bioscience and Biotechnology, originally from Gulmi, Nepal. My research focuses on <strong>genomics, bioinformatics pipelines, and computational biology</strong> — from hybrid genome assembly to viral genotyping workflows.
+          I'm <strong>Sudarshan Aryal</strong>, an undergraduate in Bioscience and Biotechnology, originally from Gulmi, Nepal. My research focuses on <strong>genomics, bioinformatics pipelines, and computational biology</strong>, from hybrid genome assembly to viral genotyping workflows.
         </p>
         <p>
           I've worked on projects including hybrid genome assembly of <em>Brucella anthropi</em> using ONT and Illumina sequencing, a Nextflow-based HPV genotyping pipeline, and phylogenomic analysis of bacterial genomes. I enjoy taking complex biological questions and building reproducible computational workflows to address them.
         </p>
         <p>
-          Beyond the lab, I write about science in a way that's meant to be felt — not just cited. I believe the natural world tells stories worth listening to, and my blog is where those stories live alongside my scientific work.
+          Beyond the lab, I write about science in a way that's meant to be felt, not just cited. I believe the natural world tells stories worth listening to, and my blog is where those stories live alongside my scientific work.
         </p>
       </div>
       <div class="about-details reveal reveal-delay-2">
