@@ -5,7 +5,7 @@ date: 2026-08-16
 categories: reflection
 header:
   teaser: /images/posts/pigeon_nest.jpg
-  [Source:https://unsplash.com/photos/brown-and-gray-bird-on-gray-metal-bar-SWapJ6OPIWQ]
+[Source:https://unsplash.com/photos/brown-and-gray-bird-on-gray-metal-bar-SWapJ6OPIWQ]
 
 tags:
   - reflection
