@@ -19,9 +19,9 @@ He watched a pigeon chick try to fly from a hostel window. What he didn't expect
 
 He lives on C Floor of the hostel, which is, confusingly enough, the second floor.
 
-A few steps from his room stands a drinking-water tap. Beside it was an elevator which, as far as he can tell, has moods of its own. It works when no one needs it and refuses to move whenever the hostel needs it most.
+A few steps from his room stands a drinking-water tap. Beside it is an elevator which, as far as he can tell, has moods of its own. It works when no one needs it and refuses to move whenever the hostel needs it most.
 
-The outer wall of the elevator shaft projected slightly into the quadrangle, leaving a narrow recess beside a window. Some weeks ago, he noticed a pigeon's nest in that recess.
+The outer wall of the elevator shaft projects slightly into the quadrangle, leaving a narrow recess beside a window. Some weeks ago, he noticed a pigeon's nest in that recess.
 
 He could not remember exactly when it had appeared. Pigeons were in the hostel on the room and sometimes in the lawns. Ordinarily, he paid no attention to them. But this nest was only a few steps from his door, and without making any deliberate decision, he began to follow its affairs.
 
