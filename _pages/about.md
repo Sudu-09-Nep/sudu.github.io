@@ -231,7 +231,7 @@ redirect_from:
         </a>
       </div>
     </div>
-    <form class="contact-form reveal reveal-delay-2" id="contactForm">
+    <form class="contact-form reveal reveal-delay-2" id="contactForm" action="https://formspree.io/f/xeajlpzg" methods="POST">
       <div class="form-row">
         <div class="form-group">
           <label for="name">Name</label>
