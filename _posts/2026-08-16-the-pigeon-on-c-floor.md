@@ -17,7 +17,7 @@ He watched a pigeon chick try to fly from a hostel window. What he didn't expect
 ![Pigeon Nest]({{ "/images/posts/pigeon_nest.jpg" | relative_url }})
 [Source: unsplash.com](https://unsplash.com/photos/brown-and-gray-bird-on-gray-metal-bar-SWapJ6OPIWQ)
 
-He lived on C Floor of the hostel, which was, confusingly enough, the second floor.
+He lives on C Floor of the hostel, which was, confusingly enough, the second floor.
 
 A few steps from his room stood a drinking-water tap. Beside it was an elevator which, as far as he could tell, had moods of its own. It worked when no one needed it and refused to move whenever the hostel needed the most.
 
