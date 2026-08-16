@@ -12,29 +12,29 @@ redirect_from:
   <div class="hero-content">
     <div class="hero-badge">
       <i class="fa-solid fa-circle"></i>
-      Researcher & Writer
+      Student · Writer · Curious Human
     </div>
     <h1>Hi, I'm <span class="accent">Sudarshan</span></h1>
     <p class="hero-tagline">
-      I'm an undergrad student who  writes about science, nature, and the questions that keep me curious. My work focuses on genomics, bioinformatics, and making complex biology accessible.
+      I study bioscience, write stories about nature and life, and spend a lot of time thinking about questions I don't have answers to yet. This site is where I keep it all.
     </p>
     <div class="hero-actions">
-      <a href="{{ '/projects/' | relative_url }}" class="btn btn-primary">
-        <i class="fa-solid fa-flask"></i> View My Projects
+      <a href="{{ '/year-archive/' | relative_url }}" class="btn btn-primary">
+        <i class="fa-solid fa-pen-nib"></i> Read My Stories
       </a>
-      <a href="{{ '/year-archive/' | relative_url }}" class="btn btn-secondary">
-        <i class="fa-solid fa-pen-nib"></i> Read My Blog
+      <a href="{{ '/projects/' | relative_url }}" class="btn btn-secondary">
+        <i class="fa-solid fa-flask"></i> See My Work
       </a>
     </div>
     <div class="hero-meta">
       <div class="hero-meta-item">
-        <i class="fa-solid fa-location-dot"></i> Nepal
+        <i class="fa-solid fa-location-dot"></i> From Nepal
       </div>
       <div class="hero-meta-item">
-        <i class="fa-solid fa-dna"></i> Genomics & Bioinformatics
+        <i class="fa-solid fa-book-open"></i> Studying in India
       </div>
       <div class="hero-meta-item">
-        <i class="fa-brands fa-github"></i> Sudu-09-Nep
+        <i class="fa-solid fa-music"></i> Learning music
       </div>
     </div>
   </div>
@@ -53,53 +53,58 @@ redirect_from:
   <section class="section" id="about">
     <div class="reveal">
       <div class="section-label">About Me</div>
-      <h2 class="section-title">Bridging Science and curiosity</h2>
-      <p class="section-subtitle">Undergraduate student at Sri Sathya Sai Institute of Higher Learning.</p>
+      <h2 class="section-title">A bit about who I am</h2>
+      <p class="section-subtitle">Still figuring things out — but here's what I know so far.</p>
     </div>
     <div class="about-grid">
       <div class="about-text reveal reveal-delay-1">
         <p>
-          I'm <strong>Sudarshan Aryal</strong>, an undergraduate in Bioscience and Biotechnology, originally from Gulmi, Nepal.
+          I'm <strong>Sudarshan Aryal</strong>, an undergraduate student from Gulmi, Nepal, currently studying Bioscience and Biotechnology at Sri Sathya Sai Institute of Higher Learning in India.
         </p>
         <p>
-          I've worked on projects including hybrid genome assembly of <em>Brucella anthropi</em> using ONT and Illumina sequencing, a Nextflow-based HPV genotyping pipeline, and phylogenomic analysis of bacterial genomes.
+          In the academic side of things, I work on bioinformatics — writing pipelines, assembling genomes, and trying to make sense of biological data. It's still early days, but I enjoy the process of learning by building things.
         </p>
         <p>
-          Beyond the lab, I write about science in a way that's meant to be felt, not just cited. I believe the natural world tells stories worth listening to, and my blog is where those stories live alongside my scientific work.
+          Outside the lab, I write. Mostly about nature, life in the hostel, and the small moments that make me stop and think. I also recently started learning music — I'm very much a beginner, but it's become one of the best parts of my day.
+        </p>
+        <p>
+          This site is a place for all of it — the scientific work, the stories, and the things I'm still trying to understand.
         </p>
       </div>
       <div class="about-details reveal reveal-delay-2">
         <div class="detail-card">
           <div class="detail-card-header">
             <div class="detail-card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-            <h4>Education</h4>
+            <h4>Currently</h4>
           </div>
           <p>B.Sc. Bioscience & Biotechnology — Sri Sathya Sai Institute of Higher Learning</p>
         </div>
         <div class="detail-card">
           <div class="detail-card-header">
-            <div class="detail-card-icon"><i class="fa-solid fa-code"></i></div>
-            <h4>Technical Skills</h4>
+            <div class="detail-card-icon"><i class="fa-solid fa-pen-nib"></i></div>
+            <h4>Writing</h4>
           </div>
-          <div class="interest-tags">
-            <span class="tag">Nextflow</span>
-            <span class="tag">Snakemake</span>
-            <span class="tag">Python</span>
-            <span class="tag">Shell</span>
-            <span class="tag">Linux</span>
-            <span class="tag">Git</span>
+          <p>Nature stories, hostel reflections, and the occasional essay about things I can't stop thinking about</p>
+        </div>
+        <div class="detail-card">
+          <div class="detail-card-header">
+            <div class="detail-card-icon"><i class="fa-solid fa-music"></i></div>
+            <h4>Learning</h4>
           </div>
+          <p>Music (beginner) — still finding my way, but enjoying every wrong note</p>
         </div>
         <div class="detail-card">
           <div class="detail-card-header">
             <div class="detail-card-icon"><i class="fa-solid fa-heart"></i></div>
-            <h4>Broader Interests</h4>
+            <h4>Interested in</h4>
           </div>
           <div class="interest-tags">
-            <span class="tag">Science Communication</span>
-            <span class="tag">Nature Writing</span>
-            <span class="tag">Evolutionary Biology</span>
-            <span class="tag">Open Science</span>
+            <span class="tag">Nature</span>
+            <span class="tag">Science</span>
+            <span class="tag">Writing</span>
+            <span class="tag">Music</span>
+            <span class="tag">Walks</span>
+            <span class="tag">Good conversations</span>
           </div>
         </div>
       </div>
@@ -107,72 +112,13 @@ redirect_from:
   </section>
 </div>
 
-<!-- ═══ Projects (auto-populated from _projects/ + hardcoded GitHub repos) ═══ -->
-<section class="section" id="projects">
-  <div class="reveal">
-    <div class="section-label">Research Projects</div>
-    <h2 class="section-title">Genomics & Bioinformatics</h2>
-    <p class="section-subtitle">Computational biology projects from genome assembly to genotyping pipelines.</p>
-  </div>
-  <div class="projects-grid">
-
-    <div class="project-card reveal reveal-delay-1">
-      <div class="project-icon"><i class="fa-solid fa-dna"></i></div>
-      <h3>Karkinos HPV Genotyping Pipeline</h3>
-      <p>Reproducible Nextflow-based workflow for HPV genotyping from NGS data — read QC, alignment, mapping-quality filtering, and coverage analysis.</p>
-      <div class="project-tools">
-        <span class="tool-tag">Nextflow</span>
-        <span class="tool-tag">fastp</span>
-        <span class="tool-tag">BWA-MEM</span>
-        <span class="tool-tag">SAMtools</span>
-        <span class="tool-tag">MultiQC</span>
-      </div>
-      <a href="https://github.com/Sudu-09-Nep/hpv_genotype_detection" target="_blank" rel="noopener" class="project-link">
-        View on GitHub <i class="fa-solid fa-arrow-right"></i>
-      </a>
-    </div>
-
-    <div class="project-card reveal reveal-delay-2">
-      <div class="project-icon"><i class="fa-solid fa-microscope"></i></div>
-      <h3>Hybrid Genome Assembly of <em>Brucella anthropi</em></h3>
-      <p>Hybrid ONT + Illumina assembly achieving 99.5% BUSCO completeness. Included genome annotation and antimicrobial resistance screening.</p>
-      <div class="project-tools">
-        <span class="tool-tag">Trycycler</span>
-        <span class="tool-tag">Medaka</span>
-        <span class="tool-tag">Polypolish</span>
-        <span class="tool-tag">BUSCO</span>
-        <span class="tool-tag">Bakta</span>
-      </div>
-      <a href="https://github.com/Sudu-09-Nep/ont-illumina-hybrid-assembly" target="_blank" rel="noopener" class="project-link">
-        View on GitHub <i class="fa-solid fa-arrow-right"></i>
-      </a>
-    </div>
-
-    <div class="project-card reveal reveal-delay-3">
-      <div class="project-icon"><i class="fa-solid fa-code-branch"></i></div>
-      <h3><em>Brucella</em> Phylogenomics & Species ID</h3>
-      <p>Snakemake workflow for 16S rRNA extraction, BLAST-based species calling, and phylogenetic analysis from hybrid-assembled genomes.</p>
-      <div class="project-tools">
-        <span class="tool-tag">Snakemake</span>
-        <span class="tool-tag">BLAST</span>
-        <span class="tool-tag">Python</span>
-        <span class="tool-tag">16S rRNA</span>
-      </div>
-      <a href="https://github.com/Sudu-09-Nep/Brucella_phylo" target="_blank" rel="noopener" class="project-link">
-        View on GitHub <i class="fa-solid fa-arrow-right"></i>
-      </a>
-    </div>
-
-  </div>
-</section>
-
 <!-- ═══ Blog (auto-populated from _posts/) ═══ -->
-<div class="section-alt">
+<div>
   <section class="section" id="blog">
     <div class="reveal">
-      <div class="section-label">Blog</div>
-      <h2 class="section-title">Writing & Reflections</h2>
-      <p class="section-subtitle">Thoughts on nature, life, science, and things that don't have clear answers yet.</p>
+      <div class="section-label">Writing</div>
+      <h2 class="section-title">Stories & Reflections</h2>
+      <p class="section-subtitle">Things I've noticed, felt, or couldn't stop thinking about until I wrote them down.</p>
     </div>
     <div class="blog-grid">
       {% assign recent_posts = site.posts | sort: "date" | reverse %}
@@ -199,13 +145,50 @@ redirect_from:
   </section>
 </div>
 
+<!-- ═══ What I Work On (brief, links to Projects page) ═══ -->
+<div class="section-alt">
+  <section class="section" id="work">
+    <div class="reveal">
+      <div class="section-label">Academic Work</div>
+      <h2 class="section-title">What I've been working on</h2>
+      <p class="section-subtitle">Bioinformatics projects I've built as part of my learning. The details and code live on the projects page.</p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-icon"><i class="fa-solid fa-dna"></i></div>
+        <h3>HPV Genotyping Pipeline</h3>
+        <p>A Nextflow pipeline for processing HPV sequencing data — my first attempt at building a reproducible bioinformatics workflow.</p>
+        <a href="{{ '/projects/' | relative_url }}" class="project-link">
+          See details <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-icon"><i class="fa-solid fa-microscope"></i></div>
+        <h3>Genome Assembly</h3>
+        <p>Hybrid assembly of a bacterial genome using long and short reads. A lot of trial and error, but I learned a great deal.</p>
+        <a href="{{ '/projects/' | relative_url }}" class="project-link">
+          See details <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="project-card reveal reveal-delay-3">
+        <div class="project-icon"><i class="fa-solid fa-code-branch"></i></div>
+        <h3>Phylogenomics</h3>
+        <p>Species identification from assembled genomes using 16S rRNA and BLAST. Built a Snakemake workflow to make it reproducible.</p>
+        <a href="{{ '/projects/' | relative_url }}" class="project-link">
+          See details <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
 <!-- ═══ CV Download ═══ -->
 <section class="section cv-section" id="cv">
   <div class="reveal">
     <div class="cv-card">
       <i class="fa-solid fa-file-lines"></i>
-      <h2>Download My CV</h2>
-      <p>Get a detailed overview of my education, research experience, skills, and academic involvement.</p>
+      <h2>My CV</h2>
+      <p>If you'd like to know more about my academic background, here's the formal version.</p>
       <a href="{{ site.baseurl }}/files/Sudarshan_Resume.pdf" class="btn-cv" id="cvBtn" target="_blank" rel="noopener">
         <i class="fa-solid fa-download"></i> Download CV (PDF)
       </a>
@@ -216,14 +199,14 @@ redirect_from:
 <!-- ═══ Contact ═══ -->
 <section class="section" id="contact">
   <div class="reveal">
-    <div class="section-label">Get in Touch</div>
-    <h2 class="section-title">Let's Connect</h2>
-    <p class="section-subtitle">Whether it's a research collaboration, a question about my work, or just a conversation about science — I'd be glad to hear from you.</p>
+    <div class="section-label">Say Hello</div>
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="section-subtitle">No formalities needed. If something here resonated with you, or you just want to talk about science, nature, or music — I'd love to hear from you.</p>
   </div>
   <div class="contact-grid">
     <div class="contact-info reveal reveal-delay-1">
-      <h3>Reach out directly</h3>
-      <p>I'm always open to discussing research ideas, bioinformatics workflows, potential collaborations, or interesting conversations about science and nature.</p>
+      <h3>Where to find me</h3>
+      <p>I check my email regularly and try to reply within a day or two. For anything casual, LinkedIn or GitHub works too.</p>
       <div class="contact-links">
         <a href="mailto:{{ site.author.email }}" class="contact-link">
           <div class="contact-link-icon"><i class="fa-solid fa-envelope"></i></div>
@@ -261,11 +244,11 @@ redirect_from:
       </div>
       <div class="form-group">
         <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject" placeholder="What's this about?">
+        <input type="text" id="subject" name="subject" placeholder="What's on your mind?">
       </div>
       <div class="form-group">
         <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+        <textarea id="message" name="message" placeholder="Say anything..." required></textarea>
       </div>
       <button type="submit" class="btn btn-primary" style="align-self: flex-start;">
         <i class="fa-solid fa-paper-plane"></i> Send Message
@@ -273,4 +256,3 @@ redirect_from:
     </form>
   </div>
 </section>
-
