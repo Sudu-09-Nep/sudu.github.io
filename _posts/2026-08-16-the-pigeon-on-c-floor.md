@@ -14,6 +14,8 @@ tags:
 
 **Opening**
 He watched a pigeon chick try to fly from a hostel window. What he didn't expect was that the chick would teach him something about himself.
+![Pigeon Nest]({{ "/images/posts/pigeon_nest.jpg" | relative_url }})
+[Source: unsplash.com](https://unsplash.com/photos/brown-and-gray-bird-on-gray-metal-bar-SWapJ6OPIWQ)
 
 He lived on C Floor of the hostel, which was, confusingly enough, the second floor.
 
