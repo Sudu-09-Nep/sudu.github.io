@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Pigeon on C Floor"
+title: 'The Pigeon on C Floor'
 date: 2026-08-16
 categories: reflection
 header:
