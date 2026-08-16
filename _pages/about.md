@@ -53,16 +53,16 @@ redirect_from:
   <section class="section" id="about">
     <div class="reveal">
       <div class="section-label">About Me</div>
-      <h2 class="section-title">Bridging genomics and curiosity</h2>
-      <p class="section-subtitle">Undergraduate researcher at Sri Sathya Sai Institute of Higher Learning, working at the intersection of computational biology and public health.</p>
+      <h2 class="section-title">Bridging Science and curiosity</h2>
+      <p class="section-subtitle">Undergraduate student at Sri Sathya Sai Institute of Higher Learning.</p>
     </div>
     <div class="about-grid">
       <div class="about-text reveal reveal-delay-1">
         <p>
-          I'm <strong>Sudarshan Aryal</strong>, an undergraduate in Bioscience and Biotechnology, originally from Gulmi, Nepal. My research focuses on <strong>genomics, bioinformatics pipelines, and computational biology</strong>, from hybrid genome assembly to viral genotyping workflows.
+          I'm <strong>Sudarshan Aryal</strong>, an undergraduate in Bioscience and Biotechnology, originally from Gulmi, Nepal.
         </p>
         <p>
-          I've worked on projects including hybrid genome assembly of <em>Brucella anthropi</em> using ONT and Illumina sequencing, a Nextflow-based HPV genotyping pipeline, and phylogenomic analysis of bacterial genomes. I enjoy taking complex biological questions and building reproducible computational workflows to address them.
+          I've worked on projects including hybrid genome assembly of <em>Brucella anthropi</em> using ONT and Illumina sequencing, a Nextflow-based HPV genotyping pipeline, and phylogenomic analysis of bacterial genomes.
         </p>
         <p>
           Beyond the lab, I write about science in a way that's meant to be felt, not just cited. I believe the natural world tells stories worth listening to, and my blog is where those stories live alongside my scientific work.
