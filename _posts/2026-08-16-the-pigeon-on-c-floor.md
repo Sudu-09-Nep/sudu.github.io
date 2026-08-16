@@ -12,16 +12,16 @@ reflection
 hostel
 self-awareness
 storytelling
-Opening
+Opening:
 He watched a pigeon chick try to fly from a hostel window. What he didn't expect was that the chick would teach him something about himself.
 
-He lived on C Floor of the hostel, which was, confusingly enough, the second floor. He had always regarded this as one of the hostel's private jokes.
+He lived on C Floor of the hostel, which was, confusingly enough, the second floor.
 
-A few steps from his room stood a drinking-water tap. Beside it was an elevator which, as far as he could tell, had moods of its own. It worked when no one needed it and refused to move whenever someone was in a hurry.
+A few steps from his room stood a drinking-water tap. Beside it was an elevator which, as far as he could tell, had moods of its own. It worked when no one needed it and refused to move whenever the hostel needed the most.
 
 The outer wall of the elevator shaft projected slightly into the quadrangle, leaving a narrow recess beside a window. It was in that recess that he first noticed the pigeon's nest.
 
-He could not remember exactly when it had appeared. Pigeons were everywhere in the hostel—on the roof, beneath the staircases, along the parapets and occasionally inside rooms where they had no business being. Ordinarily, he paid no attention to them. But this nest was only a few steps from his door, and without making any deliberate decision, he began to follow its affairs.
+He could not remember exactly when it had appeared. Pigeons were in the hostel on the room and sometimes in the lawns. Ordinarily, he paid no attention to them. But this nest was only a few steps from his door, and without making any deliberate decision, he began to follow its affairs.
 
 There were two chicks in it at first.
 
@@ -31,7 +31,7 @@ The other survived.
 
 To him, the surviving chick was a peculiar-looking creature. Its feathers did not yet resemble proper feathers. They stuck out from its body like little thorns, exposing patches of tender pink skin. Its head appeared too large for its body, and its feet seemed to belong to a much older bird.
 
-Whenever he passed the recess, he looked inside.
+Whenever he passed the recess, he looked at the nest.
 
 Sometimes he saw the mother feeding the chick. At other times, he found the chick alone, sitting quietly in the nest and staring at something he could not see.
 
@@ -105,7 +105,7 @@ He smiled.
 
 A few moments later, the chick came forward again.
 
-It opened its wings, bent its legs and looked down into the quadrangle. Its entire body appeared to tremble.
+It opened its wings, bent its legs and looked down into the quadrangle.
 
 Again it retreated.
 
@@ -246,8 +246,6 @@ The sun still struggled behind the clouds. The wind moved through the quadrangle
 The chick opened its wings once more.
 
 It bent its legs.
-
-Its fragile body trembled.
 
 Then it stepped back into the nest.
 
