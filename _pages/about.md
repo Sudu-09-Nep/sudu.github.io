@@ -77,7 +77,7 @@ redirect_from:
             <div class="detail-card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
             <h4>Currently</h4>
           </div>
-          <p>B.Sc. Bioscience & Biotechnology — Sri Sathya Sai Institute of Higher Learning</p>
+          <p>B.S. Bioscience & Biotechnology — Sri Sathya Sai Institute of Higher Learning</p>
         </div>
         <div class="detail-card">
           <div class="detail-card-header">
