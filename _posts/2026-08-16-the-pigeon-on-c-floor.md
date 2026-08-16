@@ -1,18 +1,20 @@
+---
 layout: post
 title: "The Pigeon on C Floor"
 date: 2026-08-16
 categories: reflection
 header:
-teaser: /images/posts/pigeon_nest.jpg
-[Source:https://unsplash.com/photos/brown-and-gray-bird-on-gray-metal-bar-SWapJ6OPIWQ]
+  teaser: /images/posts/pigeon_nest.jpg
+  [Source:https://unsplash.com/photos/brown-and-gray-bird-on-gray-metal-bar-SWapJ6OPIWQ]
 
 tags:
+  - reflection
+  - hostel
+  - self-awareness
+  - storytelling
+---
 
-reflection
-hostel
-self-awareness
-storytelling
-Opening:
+**Opening**
 He watched a pigeon chick try to fly from a hostel window. What he didn't expect was that the chick would teach him something about himself.
 
 He lived on C Floor of the hostel, which was, confusingly enough, the second floor.
