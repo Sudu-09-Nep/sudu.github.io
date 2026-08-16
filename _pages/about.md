@@ -62,10 +62,10 @@ redirect_from:
           I'm <strong>Sudarshan Aryal</strong>, an undergraduate student from Gulmi, Nepal, currently studying Bioscience and Biotechnology at Sri Sathya Sai Institute of Higher Learning in India.
         </p>
         <p>
-          In the academic side of things, I work on bioinformatics — writing pipelines, assembling genomes, and trying to make sense of biological data. It's still early days, but I enjoy the process of learning by building things.
+          In the academic side of things, I work on bioinformatics, writing pipelines, assembling genomes, and trying to make sense of biological data also a bit of wet lab stuffs. It's still early days, but I enjoy the process of learning by building things.
         </p>
         <p>
-          Outside the lab, I write. Mostly about nature, life in the hostel, and the small moments that make me stop and think. I also recently started learning music — I'm very much a beginner, but it's become one of the best parts of my day.
+          Outside the lab, I write. Mostly about nature, reflections, and the small moments that make me stop and think. I am also into music I'm very much a beginner, but it's one of the best parts of my day.
         </p>
         <p>
           This site is a place for all of it — the scientific work, the stories, and the things I'm still trying to understand.
