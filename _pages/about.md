@@ -65,7 +65,7 @@ redirect_from:
           In the academic side of things, I work on bioinformatics, writing pipelines, assembling genomes, and trying to make sense of biological data also a bit of wet lab stuffs. It's still early days, but I enjoy the process of learning by building things.
         </p>
         <p>
-          Outside the lab, I write. Mostly about nature, reflections, and the small moments that make me stop and think. I am also into music I'm very much a beginner, but it's one of the best parts of my day.
+          Outside the lab, I write. Mostly about nature, reflections, and the small moments that make me stop and think. I am also into music- I'm very much a beginner, but it's one of the best parts of my day.
         </p>
         <p>
           This site is a place for all of it — the scientific work, the stories, and the things I'm still trying to understand.
@@ -84,14 +84,14 @@ redirect_from:
             <div class="detail-card-icon"><i class="fa-solid fa-pen-nib"></i></div>
             <h4>Writing</h4>
           </div>
-          <p>Nature stories, hostel reflections, and the occasional essay about things I can't stop thinking about</p>
+          <p>Nature stories, Reflections, and the occasional essay about things I can't stop thinking about</p>
         </div>
         <div class="detail-card">
           <div class="detail-card-header">
             <div class="detail-card-icon"><i class="fa-solid fa-music"></i></div>
             <h4>Learning</h4>
           </div>
-          <p>Music (beginner) — still finding my way, but enjoying every wrong note</p>
+          <p>Music (beginner), still finding a way, but enjoys.</p>
         </div>
         <div class="detail-card">
           <div class="detail-card-header">
