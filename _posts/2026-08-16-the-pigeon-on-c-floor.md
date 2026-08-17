@@ -23,7 +23,7 @@ A few steps from his room stands a drinking-water tap. Beside it is an elevator 
 
 The outer wall of the elevator shaft projects slightly into the quadrangle, leaving a narrow recess beside a window. Some weeks ago, he noticed a pigeon's nest in that recess.
 
-He could not remember exactly when it had appeared. Pigeons were in the hostel on the room and sometimes in the lawns. Ordinarily, he paid no attention to them. But this nest was only a few steps from his door, and without making any deliberate decision, he began to follow its affairs.
+He could not remember exactly when it had appeared. Pigeons were in the hostel. Ordinarily, he paid no attention to them. But this nest was only a few steps from his door, and without making any deliberate decision, he began to follow its affairs.
 
 There were two chicks in it at first.
 
