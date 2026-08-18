@@ -239,7 +239,7 @@ redirect_from:
         </div>
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" title="Please enter a valid email address (e.g. name@gmail.com)">
         </div>
       </div>
       <div class="form-group">
