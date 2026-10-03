@@ -63,7 +63,7 @@ So he scampered along a branch, plucked a ripe mango, and nibbled half of it. Th
 
 Meanwhile, in the mango grove, a flock of birds suddenly burst into the air, their wings beating loudly among the branches.
 
-But Squee was too excited to notice. The thrill of discovering the new territory had blinded his ability to sense danger. He continued to scamper along the branches, unaware that something in the grove had disturbed the quiet morning.
+But Squee was too excited to notice. The thrill of discovering the new territory had blinded him. He continued to scamper along the branches.
 
 Squee quietly returned to where his sister was resting. Fewee was sleeping peacefully at the fork of a branch, her bushy tail gently covering her small face, her two big shiny black eyes hidden behind long brown, black, and white lashes. A few metres away, their mother was also sleeping on another branch, resting after the morning's search for food.
 
