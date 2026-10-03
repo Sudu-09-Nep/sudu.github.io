@@ -12,8 +12,7 @@ tags:
   - wildlife
   - fiction
 ---
-
-##Beyond The Boundary
+Beyond the Boundary
 
 "Squeeee… Squeeee… where are you? It is time to go home. We are leaving," shouted Fewee.
 
@@ -21,9 +20,8 @@ She waited for a response from her brother, but nothing came back except silence
 
 Mother had warned us not to come here… but this fellow… muttered Fewee, panic slowly rising in her voice.
 
-![Two squirrels on a branch]({{ "/images/posts/squirrel-mango.jpg" | relative_url }})
-
-Photo:- (https://unsplash.com/photos/a-zebra-eating-an-orange-on-a-tree-bpfF58FQN9o)
+![Squirrel on a mango tree]({{ "/images/posts/squirrel-mango.jpg" | relative_url }})
+Photo: unsplash.com
 
 
 It had been only a week since Squee and Fewee had started exploring the world. Every morning they followed the same routine, leaving the warm hollow of their coconut tree to search for food and adventure among the branches. Such a nice life, nothing to worry about, just eat, sleep, and repeat.
