@@ -1,18 +1,20 @@
+---
 layout: post
-title: "Beyond the Boundary"
+title: "Beyond The Boundary"
 date: 2026-10-03
 categories: nature
 header:
-teaser: /images/posts/squirrel-mango.jpg
+  teaser: /images/posts/squirrel-mango.jpg
 tags:
+  - nature
+  - storytelling
+  - squirrels
+  - wildlife
+  - fiction
+---
 
-nature
-storytelling
-squirrels
-wildlife
-fiction
+##Beyond The Boundary
 
-description: "Two young squirrels, Squee and Fewee, step past the line their mother told them never to cross."
 "Squeeee… Squeeee… where are you? It is time to go home. We are leaving," shouted Fewee.
 
 She waited for a response from her brother, but nothing came back except silence.
